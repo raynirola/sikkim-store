@@ -1,12 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
+    <header class="fixed top-0 w-screen hidden">
+        <div class="container mx-auto py-4">
+            <a href="">
+                <img src="{{ asset('images/logo-flat.png') }}"
+                     class="w-20 h-20 object-cover overflow-hidden rounded-full border border-transparent hover:border-green-700 transition ease-in-out duration-200"
+                     alt="">
+            </a>
+        </div>
+    </header>
     <main class="container mx-auto h-screen flex items-center justify-center">
         <section class="space-y-4 md:space-y-8">
+            <a href=""
+               class="flex items-center justify-center">
+                <img src="{{ asset('images/logo-flat.png') }}"
+                     class="w-56 h-56 md:w-40 md:h-40 object-cover overflow-hidden rounded-full border border-transparent hover:border-green-700 transition ease-in-out duration-200"
+                     alt="">
+            </a>
             <div class="text-center text-xl md:text-3xl font-light leading-none tracking-tight">
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
-            Coming Soon, Stay Tuned!
-          </span>
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
+                Coming Soon, Stay Tuned!
+              </span>
             </div>
 
             <div x-data="

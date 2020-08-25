@@ -22,7 +22,7 @@
     <link href="{{ asset('css/main.css') }}"
           rel="stylesheet">
 </head>
-<body class="md:bg-gradient-to-r from-yellow-200 to-orange-300">
+<body class="md:bg-gradient-to-tr from-gray-800 to-gray-900">
 @yield('content')
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
         defer>
