@@ -1,24 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <header class="fixed top-0 w-screen hidden">
-        <div class="container mx-auto py-4">
-            <a href="">
-                <img src="{{ asset('images/logo-flat.png') }}"
-                     class="w-20 h-20 object-cover overflow-hidden rounded-full border border-transparent hover:border-green-700 transition ease-in-out duration-200"
-                     alt="">
-            </a>
-        </div>
-    </header>
-    <main class="container mx-auto h-screen flex items-center justify-center">
+    <main class="container mx-auto h-screen flex md:items-center justify-center pt-40 md:pt-0">
         <section class="space-y-10 md:space-y-8">
             <a href=""
                class="flex items-center justify-center">
                 <img src="{{ asset('images/logo-flat.png') }}"
-                     class="w-56 h-56 md:w-40 md:h-40 object-cover overflow-hidden rounded-full border border-transparent md:hover:border-green-700 transition ease-in-out duration-200"
+                     class="w-32 h-32 md:w-40 md:h-40 object-cover overflow-hidden rounded-full border border-transparent md:hover:border-green-700 transition ease-in-out duration-200"
                      alt="">
             </a>
-            <div class="text-center text-xl md:text-3xl font-semibold leading-none tracking-tight">
+            <div class="text-center text-lg md:text-3xl font-medium md:font-semibold leading-none tracking-tight">
               <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
                 Coming Soon, Stay Tuned!
               </span>
@@ -60,28 +51,32 @@
                     }
                 }"
                  x-init="startCountdown()"
-                 class="flex items-center space-x-4 sm:space-x-6 justify-center text-teal-500">
+                 class="flex items-center space-x-4 sm:space-x-6 justify-center text-teal-500 pb-32">
                 <div class="flex flex-col items-center justify-between">
-            <span class="font-semibold text-2xl sm:text-3xl md:text-4xl flex items-center justify-center"
-                  x-text="clock.days"></span>
+                    <span class="font-semibold text-2xl sm:text-3xl md:text-4xl flex items-center justify-center"
+                          x-text="clock.days"></span>
                     <span class="text-xs sm:text-sm md:text-gray-500">Days</span>
                 </div>
                 <div class="flex flex-col items-center justify-between ">
-            <span class="font-semibold  text-2xl sm:text-3xl md:text-4xl  flex items-center justify-center"
-                  x-text="clock.hours"></span>
+                    <span class="font-semibold  text-2xl sm:text-3xl md:text-4xl  flex items-center justify-center"
+                          x-text="clock.hours"></span>
                     <span class="text-xs sm:text-sm md:text-gray-500">Hours</span>
                 </div>
                 <div class="flex flex-col items-center justify-between ">
-            <span class="font-semibold  text-2xl sm:text-3xl md:text-4xl  flex items-center justify-center"
-                  x-text="clock.minutes"></span>
+                    <span class="font-semibold  text-2xl sm:text-3xl md:text-4xl  flex items-center justify-center"
+                          x-text="clock.minutes"></span>
                     <span class="text-xs sm:text-sm md:text-gray-500">Minutes</span>
                 </div>
                 <div class="flex flex-col items-center justify-between ">
-            <span class="font-semibold  text-2xl sm:text-3xl md:text-4xl  flex items-center justify-center"
-                  x-text="clock.seconds"></span>
+                    <span class="font-semibold  text-2xl sm:text-3xl md:text-4xl  flex items-center justify-center"
+                          x-text="clock.seconds"></span>
                     <span class="text-xs sm:text-sm md:text-gray-500">Seconds</span>
                 </div>
             </div>
+            <a href="mailto:raynirola@gmail.com"
+               class="text-center block w-full bg-gradient-to-r from-green-600 to-indigo-600 px-4 py-3 rounded-md text-white shadow-md hover:from-indigo-600 hover:to-green-600 transition ease-in-out duration-200">
+                Contact
+            </a>
         </section>
     </main>
 @endsection
