@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <main class="container mx-auto h-screen flex md:items-center justify-center pt-40 md:pt-0">
-        <section class="space-y-10 md:space-y-8">
+    <main class="container mx-auto h-screen flex md:items-center justify-center pt-24 md:pt-0">
+        <section class="space-y-10 md:space-y-8 w-full">
             <a href=""
                class="flex items-center justify-center">
                 <img src="{{ asset('images/logo-flat.png') }}"
@@ -73,10 +73,14 @@
                     <span class="text-xs sm:text-sm md:text-gray-500">Seconds</span>
                 </div>
             </div>
-            <a href="mailto:raynirola@gmail.com"
-               class="text-center block w-full bg-gradient-to-r from-green-600 to-indigo-600 px-4 py-3 rounded-md text-white shadow-md hover:from-indigo-600 hover:to-green-600 transition ease-in-out duration-200">
-                Contact
-            </a>
+
+            <div class="px-10">
+                <a href="mailto:raynirola@gmail.com"
+                   class="text-center inline-block w-full bg-gradient-to-r from-green-600 to-indigo-600 px-4 py-3 rounded-md text-white shadow-md hover:from-indigo-600 hover:to-green-600 transition ease-in-out duration-200">
+                    Contact
+                </a>
+            </div>
+
         </section>
     </main>
 @endsection
