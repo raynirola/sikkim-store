@@ -1,7 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="text-gray-700 body-font relative pt-4 bg-gray-900 min-h-screen pt-24">
+    <section class="text-gray-200 body-font bg-gray-900 pt-10">
+        <div class="container px-4 md:px-6 lg:px-8 mx-auto pt-4 pb-6">
+            <div
+                class="flex justify-start items-center text-teal-dark uppercase tracking-wide font-bold text-xs space-x-2">
+                <a class="no-underline {{ request()->routeIs('index') ? 'text-indigo-700' : '' }}"
+                   href="{{ route('home') }}">
+                    Home
+                </a>
+                <span>
+                    <svg class="w-3 h-3 text-indigo-600"
+                         fill="none"
+                         stroke-linecap="round"
+                         stroke-linejoin="round"
+                         stroke-width="4"
+                         viewBox="0 0 24 24"
+                         stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>
+                </span>
+                <div class="no-underline {{ request()->routeIs('contact.create') ? 'text-gray-400' : '' }}">
+                    Contact Us
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-700 body-font relative pt-4 bg-gray-900 min-h-screen">
         <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 flex sm:flex-no-wrap flex-wrap">
             <div
                 class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">

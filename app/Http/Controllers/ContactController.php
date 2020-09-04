@@ -17,6 +17,7 @@ class ContactController extends Controller
     {
         Notification::route('mail', config('services.admin.email'))
             ->notify(new ContactMessageNotification($request->validated()));
+
         return redirect()->back()->with(['success' => 'Message sent successfully']);
     }
 }
