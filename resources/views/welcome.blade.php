@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.welcome')
 
 @section('content')
     <main class="container mx-auto h-screen flex md:items-center justify-center pt-24 md:pt-0">
@@ -75,7 +75,7 @@
             </div>
 
             <div class="px-10 flex items-center justify-center mx-auto">
-                <a href="mailto:raynirola@gmail.com"
+                <a href="{{ route('contact.create') }}"
                    class="text-center inline-block w-full md:max-w-sm bg-gradient-to-r from-green-600 to-indigo-600 px-4 py-3 rounded-md text-white shadow-md hover:from-indigo-600 hover:to-green-600 transition ease-in-out duration-200">
                     Contact
                 </a>

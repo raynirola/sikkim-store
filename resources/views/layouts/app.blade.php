@@ -19,10 +19,10 @@
     <script src="{{ asset('js/app.js') }}"
             defer></script>
     <!-- Styles -->
-    <link href="{{ asset('css/main.css') }}"
+    <link href="{{ asset('css/app.css') }}"
           rel="stylesheet">
 </head>
-<body class="bg-gradient-to-tr from-gray-800 to-gray-900">
+<body class="bg-gray-100">
 @yield('content')
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
         defer>
