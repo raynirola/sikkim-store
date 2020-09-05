@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\User;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Artisan;
 
 class DeleteUsers extends Command
 {
@@ -44,8 +45,9 @@ class DeleteUsers extends Command
             echo "No Users available...\n";
             return 1;
         }
-
         User::query()->delete();
+        echo "Resetting Database\n";
+        Artisan::call('migrate:fresh');
         echo "Cleaned..\n";
         return 1;
     }
