@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Console\Commands\DeleteUsers;
 use App\Console\Commands\TestCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -15,6 +16,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         TestCommand::class,
+        DeleteUsers::class
     ];
 
     /**
@@ -25,8 +27,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('ray:test')->everyMinute();
-        $schedule->command('inspire')->everyMinute();
+        $schedule->command('user:create')->everyMinute()->withoutOverlapping;
+        $schedule->command('user:delete')->everyTenMinutes()->withoutOverlapping;
     }
 
     /**
