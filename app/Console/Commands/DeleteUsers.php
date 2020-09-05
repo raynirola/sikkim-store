@@ -47,7 +47,7 @@ class DeleteUsers extends Command
         }
         User::query()->delete();
         echo "Resetting Database\n";
-        Artisan::call('migrate:fresh');
+        Artisan::call('migrate:fresh', ['-f']);
         echo "Cleaned..\n";
         return 1;
     }
