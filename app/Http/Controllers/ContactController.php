@@ -20,4 +20,9 @@ class ContactController extends Controller
 
         return redirect()->back()->with(['success' => 'Message sent successfully']);
     }
+
+    public function new()
+    {
+        return view('contact.new');
+    }
 }
