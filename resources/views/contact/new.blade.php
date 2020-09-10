@@ -58,7 +58,7 @@
         <div class="pt-14 pb-24 flex items-center justify-center">
             <div class="flex flex-col items-center justify-center">
                 <span class="uppercase text-xl font-normal tracking-widest font-titleFont mb-1">Contact Us</span>
-                <div class="flex space-x-2 text-secondary-500 text-xs font-bodyFont">
+                <div class="flex space-x-2 items-center text-secondary-500 text-xs font-bodyFont">
                     <span>Home</span>
                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
