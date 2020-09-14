@@ -138,7 +138,7 @@
                         <button
                             type="submit"
                             class="mt-4 md:mt-0 font-bodyFont group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm leading-5 font-normal rounded-md text-secondary-200 bg-brand-700 hover:bg-brand-600 focus:outline-none focus:border-brand-600 focus:shadow-outline-green active:bg-brand-700 transition duration-150 ease-in-out">
-                            <p class="group-hover:text-white">Send Message</p>
+                            <p class="group-hover:text-white uppercase md:capitalize">Send Message</p>
                         </button>
                     </form>
                     <p class="font-bodyFont tracking-tight text-xs text-secondary-500 mt-3">
@@ -157,14 +157,14 @@
                     Be the first to know about what we are up to, and get latest news, blogs, updates and maybe offers.
                     Stay in touch with us, subscribe to your mailing list.
                 </p>
-                <form action="{{ route('subscription.store') }}" method="post" class="w-full md:w-2/3">
+                <form action="{{ route('subscription.store') }}" method="post" class="hidden md:block w-full md:w-2/3">
                     @csrf
                     <div class="flex flex-col justify-start">
                         <div class="flex items-center relative">
                             <label for="emailSubs"></label>
                             <input id="emailSubs" type="text" placeholder="Enter your email" name="subscriber_email"
-                                   class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont">
-                            <button
+                                   class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont">
+                            <button type="submit"
                                 class="text-sm flex items-center justify-center h-full py-3 px-8 absolute top-0 right-0 text-secondary-200  border-l bg-brand-700 rounded-r-md hover:text-white hover:bg-brand-600">
                                 Subscribe
                             </button>
@@ -173,6 +173,25 @@
                         <span
                             class="mt-1 pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600 text-left">{{$message}}</span>
                         @enderror
+                    </div>
+                </form>
+                <form action="{{ route('subscription.store') }}" method="post" class="md:hidden w-full md:w-2/3">
+                    @csrf
+                    <div class="flex flex-col justify-start">
+                        <div class="flex flex-col">
+                            <label for="emailSubs"></label>
+                            <input
+                                class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont"
+                                id="emailSubs" type="text" placeholder="Enter your email" name="subscriber_email">
+                            @error('subscriber_email')
+                            <span
+                                class="mt-1 pl-1 text-xs font-normal font-bodyFont tracking-tight text-red-600 text-left">{{$message}}</span>
+                            @enderror
+                            <button type="submit"
+                                class="mt-4 uppercase md:capitalize text-sm flex items-center justify-center h-full py-3 px-8 text-secondary-200  bg-brand-700 rounded-md hover:text-white hover:bg-brand-600">
+                                Subscribe
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -191,13 +210,12 @@
                 <p>{{ session('success') }}</p>
                 <button class="focus:outline-none"
                         @click="open = !open">
-                    <svg viewBox="0 0 20 20"
-                         fill="currentColor"
-                         class="x-circle w-6 h-6 text-white">
-                        <path fill-rule="evenodd"
-                              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                              clip-rule="evenodd"></path>
-                    </svg>
+                    <div class="flex items-center justify-center p-1 bg-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-red-700">
+                            <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+
                 </button>
             </div>
         </div>
