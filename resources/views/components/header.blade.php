@@ -4,7 +4,7 @@
             <div class="flex items-center justify-start flex-1">
                 @if(request()->routeIs('home.index'))
                     <button type="button"
-                            class="px-2 pl-4 md:px-5 py-4 border-r border-gray-700 group transition ease-in-out duration-150">
+                            class="px-2 pl-4 md:pl-6 md:px-3 py-4 group transition ease-in-out duration-150">
                         <svg class="w-5 group-hover:text-black transition ease-in-out duration-150"
                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -14,7 +14,7 @@
                     </button>
                     <div class="relative">
                         <button
-                            class="flex h-full items-center px-2 md:px-5 py-4 md:py-3 cursor-not-allowed group transition ease-in-out duration-150">
+                            class="flex h-full items-center px-2 md:px-3 py-4 md:py-3 cursor-not-allowed group transition ease-in-out duration-150">
                             <div>
                                 <svg class="w-5 group-hover:text-black" xmlns="http://www.w3.org/2000/svg" fill="none"
                                      viewBox="0 0 24 24"
@@ -24,7 +24,7 @@
                                 </svg>
                             </div>
                             <div
-                                class="hidden md:block font-bodyFont leading-none tracking-tight ml-4 font-light text-left group-hover:text-black">
+                                class="hidden md:block font-bodyFont leading-none tracking-tight ml-2 font-light text-left group-hover:text-black">
                                 <p class="text-xs">Select</p>
                                 <p class="text-sm">Category</p>
                             </div>
@@ -32,7 +32,7 @@
                     </div>
                 @else
                     <a href="{{ route('home') }}"
-                       class="px-2 pl-4 md:px-5 py-4 group transition ease-in-out duration-150">
+                       class="px-2 pl-4 md:pl-6 md:px-3 py-4 group transition ease-in-out duration-150">
                         <svg class="w-5 group-hover:text-black transition ease-in-out duration-150"
                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
@@ -47,7 +47,7 @@
                 Sikkim Store
             </a>
             <div class="flex items-center justify-end flex-1">
-                <a class="px-2 md:px-5 py-4 cursor-not-allowed group transition ease-in-out duration-150">
+                <a class="px-2 md:px-3 py-4 cursor-not-allowed group transition ease-in-out duration-150">
                     <svg class="w-5 group-hover:text-black transition ease-in-out duration-150"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                          stroke="currentColor">
@@ -55,7 +55,7 @@
                               d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                     </svg>
                 </a>
-                <a class="px-2 md:px-5 py-4 cursor-not-allowed group transition ease-in-out duration-150">
+                <a class="px-2 md:px-3 py-4 cursor-not-allowed group transition ease-in-out duration-150">
                     <svg class="w-5 group-hover:text-black transition ease-in-out duration-150"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                          stroke="currentColor">
@@ -63,7 +63,7 @@
                               d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                     </svg>
                 </a>
-                <a class="px-2 pr-4 md:px-5 py-4 cursor-not-allowed group transition ease-in-out duration-150">
+                <a class="px-2 pr-4 md:pr-6 md:px-3 py-4 cursor-not-allowed group transition ease-in-out duration-150">
                     <svg class="w-5 group-hover:text-black transition ease-in-out duration-150"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                          stroke="currentColor">
