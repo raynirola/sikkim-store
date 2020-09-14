@@ -1,124 +1,193 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="text-gray-200 body-font bg-gray-900 pt-10">
-        <div class="container px-4 md:px-6 lg:px-8 mx-auto pt-4 pb-6">
-            <div
-                class="flex justify-start items-center text-teal-dark uppercase tracking-wide font-bold text-xs space-x-2">
-                <a class="no-underline {{ request()->routeIs('index') ? 'text-indigo-700' : '' }}"
-                   href="{{ route('home') }}">
-                    Home
-                </a>
-                <span>
-                    <svg class="w-3 h-3 text-indigo-600"
-                         fill="none"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         stroke-width="4"
-                         viewBox="0 0 24 24"
-                         stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>
-                </span>
-                <div class="no-underline {{ request()->routeIs('contact.create') ? 'text-gray-400' : '' }}">
-                    Contact Us
+    <x-breadcrumb currentPage="Contact Us" :links="[]"/>
+    <section class="container mx-auto md:-mt-24 bg-white relative shadow-2xl sm:rounded-sm z-10">
+        <div class="h-96">
+            <iframe width="100%"
+                    height="100%"
+                    class="rounded-t-sm"
+                    title="map"
+                    src="https://maps.google.com/maps?q=Bermiok%20Martam&t=&8z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+        <div class="flex flex-col md:flex-row flex-col-reverse divide-x divide-secondary-200 relative">
+            <div class="absolute top-0 w-full h-1 md:h-0.5 bg-brand-700"></div>
+            <div class="flex-1 p-8 flex-col justify-center">
+                <div class="font-titleFont text-base text-secondary-700 font-medium mb-8 mt-4 md:mt-8 text-center">
+                    Contact Info
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="grid grid-cols-2 font-bodyFont w-full lg:w-4/5">
+                        <div
+                            class="border border-secondary-200 border-t-0 border-l-0 flex items-center justify-center md:p-3">
+                            <div class="flex flex-col justify-start items-center space-y-2 mb-4">
+                                <svg class="w-7 h-7 mt-3 text-brand-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <p class="font-semibold text-xs text-secondary-700">Address</p>
+                                <p class="font-light text-xs text-secondary-500 text-center">
+                                    One Stop Solutions,<br> Martam Ghaiyabari, Bermiok-Geyzing,<br> West Sikkim 737113.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="border border-secondary-200 border-t-0 border-l-0 border-r-0 flex justify-center md:p-3">
+                            <div class="flex flex-col justify-start items-center space-y-2">
+                                <svg class="w-7 h-7 mt-3 text-brand-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"/>
+                                </svg>
+                                <p class="font-semibold text-xs text-secondary-700">Phone</p>
+                                <div class="tabular-nums">
+                                    <p class="font-light text-xs text-secondary-500 text-center">+91 7427990891</p>
+                                    <p class="font-light text-xs text-secondary-500 text-center">+91 8670825891</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="border border-secondary-200 border-b-0 border-t-0 border-l-0 flex justify-center md:p-3">
+                            <div class="flex flex-col justify-start items-center space-y-2">
+                                <svg class="w-7 h-7 mt-3 text-brand-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <p class="font-semibold text-xs text-secondary-700">Email</p>
+                                <div>
+                                    <p class="font-light text-xs text-secondary-500 text-center">
+                                        support@sikkim.store</p>
+                                    <p class="font-light text-xs text-secondary-500 text-center">
+                                        admin@sikkim.store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center md:p-3">
+                            <div class="flex flex-col justify-center items-center space-y-2">
+                                <svg class="w-7 h-7 mt-3 text-brand-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <p class="font-semibold text-xs text-secondary-700">Working Hours</p>
+                                <div>
+                                    <p class="font-light text-xs text-secondary-500 text-center">
+                                        Monday - Friday : 10:00 - 21:00</p>
+                                    <p class="font-light text-xs text-secondary-500 text-center">
+                                        Saturday : 10:00 - 13:00</p>
+                                    <p class="font-light text-xs text-secondary-500 text-center">
+                                        Sunday : Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 p-8 flex flex-col justify-center">
+                <div class="font-titleFont text-base text-secondary-700 font-medium mb-8 mt-8 text-center">Write to Us
+                </div>
+                <div class="flex flex-col justify-center mx-auto lg:w-4/6">
+                    <form id="contact-form"
+                          action="{{ route('contact.store') }}"
+                          method="post">
+                        @csrf
+                        <div class="mb-2">
+                            <label for="name"
+                                   class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Name</label>
+                            <input id="name"
+                                   name="name"
+                                   value="{{old('name')}}"
+                                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5"
+                                   placeholder="John Doe"
+                                   type="text">
+                            @error('name')
+                            <span
+                                class="pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600">{{$message}}</span>
+                            @enderror
+                        </div>
+                        <div class="mb-2">
+                            <label for="email"
+                                   class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Email</label>
+                            <input id="email"
+                                   name="email"
+                                   value="{{old('email')}}"
+                                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5"
+                                   placeholder="johndoe@mail.com"
+                                   type="email">
+                            @error('email')
+                            <span
+                                class="pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600">{{$message}}</span>
+                            @enderror
+                        </div>
+                        <div class="mb-2">
+                            <label for="message"
+                                   class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Message</label>
+                            <textarea id="message"
+                                      name="message"
+                                      class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5 h-32 resize-none"
+                                      placeholder="Something interesting perhaps.">{{old('message')}}</textarea>
+                            @error('message')
+                            <span
+                                class="pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600">{{$message}}</span>
+                            @enderror
+                        </div>
+                        <button
+                            type="submit"
+                            class="mt-4 md:mt-0 font-bodyFont group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm leading-5 font-normal rounded-md text-secondary-200 bg-brand-700 hover:bg-brand-600 focus:outline-none focus:border-brand-600 focus:shadow-outline-green active:bg-brand-700 transition duration-150 ease-in-out">
+                            <p class="group-hover:text-white">Send Message</p>
+                        </button>
+                    </form>
+                    <p class="font-bodyFont tracking-tight text-xs text-secondary-500 mt-3">
+                        We won't spam your email, you can trust us. We hate spams as much as you do.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="text-gray-700 body-font relative pt-4 bg-gray-900 min-h-screen">
-        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 flex sm:flex-no-wrap flex-wrap">
-            <div
-                class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-                <iframe width="100%"
-                        height="100%"
-                        class="absolute inset-0"
-                        title="map"
-                        src="https://maps.google.com/maps?q=Bermiok%20Martam&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-                <div class="bg-filter absolute inset-0"></div>
-                <div class="bg-gray-900 relative flex flex-wrap py-6 rounded">
-                    <div class="lg:w-1/2 px-6">
-                        <h2 class="title-font font-medium text-gray-400 tracking-widest text-sm">ADDRESS</h2>
-                        <p class="leading-relaxed text-gray-200 text-sm mt-4">
-                            One Stop Solutions,
-                            Martam Ghaiyabari, Bermiok
-                            Geyzing, Sikkim - 737113
-                        </p>
-                    </div>
-                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                        <h2 class="title-font font-medium text-gray-400 tracking-widest text-sm">EMAIL</h2>
-                        <a class="text-gray-200 leading-relaxed">support@sikkim.store</a>
-                        <h2 class="title-font font-medium text-gray-400 tracking-widest text-sm mt-4">PHONE</h2>
-                        <p class="leading-relaxed text-gray-200">+91 7427990891</p>
-                    </div>
-                </div>
-            </div>
-            <div class="lg:w-1/3 md:w-1/2 bg-gray-900 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-                <h2 class="text-gray-200 text-lg mb-1 font-medium title-font">Message</h2>
-                <p class="leading-relaxed mb-5 text-gray-400">Feel free to send us any query, feedback, suggestion
-                    whatsoever.
+    <section class="bg-pattern -mt-20">
+        <div class="container mx-auto pt-40 pb-24 max-w-3xl text-center">
+            <div class="flex flex-col justify-center items-center p-8">
+                <p class="font-titleFont uppercase text-lg tracking-wide text-secondary-800 mb-4">Subscribe to our
+                    newsletter</p>
+                <p class="font-bodyFont text-xs text-secondary-500 leading-6 mb-4">
+                    Be the first to know about what we are up to, and get latest news, blogs, updates and maybe offers.
+                    Stay in touch with us, subscribe to your mailing list.
                 </p>
-                <form id="contact-form"
-                      action="{{ route('contact.store') }}"
-                      method="post">
+                <form action="{{ route('subscription.store') }}" method="post" class="w-full md:w-2/3">
                     @csrf
-                    <div class="mb-4">
-                        <label for="name"
-                               class="mb-1 text-sm font-medium text-gray-200">Name</label>
-                        <input id="name"
-                               name="name"
-                               value="{{old('name')}}"
-                               class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 @error('name'){{'border-red-500'}} @enderror placeholder-gray-500 text-gray-900  focus:outline-none focus:shadow-outline-blue focus:border-indigo-500 focus:z-10 text-sm sm:leading-5"
-                               placeholder="John Doe"
-                               type="text">
-                        @error('name')
-                        <span class="pl-2 text-xs font-medium tracking-wide text-red-600">{{$message}}</span>
+                    <div class="flex flex-col justify-start">
+                        <div class="flex items-center relative">
+                            <label for="emailSubs"></label>
+                            <input id="emailSubs" type="text" placeholder="Enter your email" name="subscriber_email"
+                                   class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont">
+                            <button
+                                class="text-sm flex items-center justify-center h-full py-3 px-8 absolute top-0 right-0 text-secondary-200  border-l bg-brand-700 rounded-r-md hover:text-white hover:bg-brand-600">
+                                Subscribe
+                            </button>
+                        </div>
+                        @error('subscriber_email')
+                        <span
+                            class="mt-1 pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600 text-left">{{$message}}</span>
                         @enderror
                     </div>
-                    <div class="mb-4">
-                        <label for="email"
-                               class="mb-1 text-sm font-medium text-gray-200">Email</label>
-                        <input id="email"
-                               name="email"
-                               value="{{old('email')}}"
-                               class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 @error('email'){{'border-red-500'}}@enderror placeholder-gray-500 text-gray-900  focus:outline-none focus:shadow-outline-blue focus:border-indigo-500 focus:z-10 text-sm sm:leading-5"
-                               placeholder="johndoe@mail.com"
-                               type="email">
-                        @error('email')
-                        <span class="pl-2 text-xs font-medium tracking-wide text-red-600">{{$message}}</span>
-                        @enderror
-                    </div>
-                    <div class="mb-4">
-                        <label for="message"
-                               class="mb-1 text-sm font-medium text-gray-200">Message</label>
-                        <textarea id="message"
-                                  name="message"
-                                  class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 @error('message'){{'border-red-500'}}@enderror placeholder-gray-500 text-gray-900  focus:outline-none focus:shadow-outline-blue focus:border-indigo-500 focus:z-10 text-sm sm:leading-5 h-32 resize-none"
-                                  placeholder="Something interesting perhaps.">{{old('message')}}</textarea>
-                        @error('message')
-                        <span class="pl-2 text-xs font-medium tracking-wide text-red-600">{{$message}}</span>
-                        @enderror
-                    </div>
-                    <button
-                        type="submit"
-                        class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
-                        Send Message
-                    </button>
                 </form>
-                <p class="text-xs text-gray-500 mt-3">
-                    We won't spam your email, you can trust us. We hate spams as much as you do.
-                </p>
             </div>
         </div>
     </section>
 
     @if(session('success'))
-        <div class="fixed bottom-0 w-screen bg-green-500 px-4"
+        <div class="fixed bottom-0 w-screen bg-brand-700 px-4 font-title z-50 font-bodyFont"
              x-data="{ open: true }"
              x-show="open"
              x-transition:leave="transition ease-in duration-200 transform"
              x-transition:leave-start="opacity-100 scale-100"
              x-transition:leave-end="opacity-0 scale-95"
              @click.away="open = false ">
-            <div class="container mx-auto max-w-5xl flex items-center justify-between py-4 text-white">
+            <div class="container mx-auto max-w-5xl flex items-center justify-between py-4 text-white text-sm">
                 <p>{{ session('success') }}</p>
                 <button class="focus:outline-none"
                         @click="open = !open">

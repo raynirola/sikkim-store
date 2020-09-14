@@ -2,24 +2,25 @@
 
 namespace App\Console\Commands;
 
-use App\User;
+use App\Notifications\DailyMailNotification;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Notification;
 
-class TestCommand extends Command
+class SendDailyMail extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'user:create';
+    protected $signature = 'send:dailyMail';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Send a daily mail';
 
     /**
      * Create a new command instance.
@@ -37,8 +38,7 @@ class TestCommand extends Command
      */
     public function handle()
     {
-        echo "Running Test Command.....\n";
-        echo "Creating 5 users.....\n";
-        factory(User::class, 5)->create();
+        Notification::route('mail', ['raynirola@gmail.com', 'alishachauhan797@gmail.com', 'raynirola@icloud.com'])
+            ->notify(new DailyMailNotification());
     }
 }

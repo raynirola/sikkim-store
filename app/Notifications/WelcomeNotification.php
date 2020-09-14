@@ -7,16 +7,9 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class ContactMessageNotification extends Notification implements ShouldQueue
+class WelcomeNotification extends Notification implements ShouldQueue
 {
     use Queueable;
-
-    private $request;
-
-    public function __construct($request)
-    {
-        $this->request = $request;
-    }
 
     /**
      * Get the notification's delivery channels.
@@ -38,13 +31,11 @@ class ContactMessageNotification extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('Contact Message, Sikkim Store')
-            ->greeting('Hello, Admin!')
-            ->line('You have a new message.')
-            ->line('From: ' . $this->request['name'])
-            ->line('Email: ' . $this->request['email'])
-            ->line('Message:')
-            ->line('"' . $this->request['message'] . ' "')
-            ->salutation('(Bot)');
+            ->success()
+            ->line('Welcome to Sikkim Store')
+            ->line('Thank you for subscribing to your newsletter, you are part of a great adventure.')
+            ->line('If you didnt subscribe, you can always unsubscribe.')
+            ->action('Unsubscribe', url('/', ''))
+            ->line('Thank you for using our application!');
     }
 }

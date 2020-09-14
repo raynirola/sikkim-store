@@ -3,7 +3,7 @@
 namespace App\Console;
 
 use App\Console\Commands\DeleteUsers;
-use App\Console\Commands\TestCommand;
+use App\Console\Commands\SendDailyMail;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        TestCommand::class,
+        SendDailyMail::class,
         DeleteUsers::class
     ];
 
@@ -27,8 +27,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('user:create')->everyMinute()->withoutOverlapping;
-        $schedule->command('user:delete')->everyTenMinutes()->withoutOverlapping;
+        $schedule->command('send:dailyMail')->everyMinute()->withoutOverlapping;
     }
 
     /**

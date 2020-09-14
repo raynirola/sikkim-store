@@ -75,7 +75,7 @@
             </div>
 
             <div class="px-10 flex items-center justify-center mx-auto">
-                <a href="{{ route('contact.new') }}"
+                <a href="{{ route('contact.index') }}"
                    class="text-center inline-block w-full md:max-w-sm bg-gradient-to-r from-green-600 to-indigo-600 px-4 py-3 rounded-md text-white shadow-md hover:from-indigo-600 hover:to-green-600 transition ease-in-out duration-200">
                     Contact
                 </a>
