@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands;
 
-use App\Notifications\DailyMailNotification;
+use App\Subscription;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Notification;
+use App\Notifications\DailyMailNotification;
 
 class SendDailyMail extends Command
 {
@@ -20,7 +20,7 @@ class SendDailyMail extends Command
      *
      * @var string
      */
-    protected $description = 'Send a daily mail';
+    protected $description = 'Sends a daily mail';
 
     /**
      * Create a new command instance.
@@ -38,7 +38,8 @@ class SendDailyMail extends Command
      */
     public function handle()
     {
-        Notification::route('mail', ['raynirola@gmail.com', 'alishachauhan797@gmail.com', 'raynirola@icloud.com'])
-            ->notify(new DailyMailNotification());
+        foreach (Subscription::query()->where('active',true)->get() as $sub){
+            $sub->notify(new DailyMailNotification());
+        }
     }
 }

@@ -3,29 +3,19 @@
 namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Inspiring;
-use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Messages\MailMessage;
 
 class DailyMailNotification extends Notification implements ShouldQueue
 {
     use Queueable;
 
     /**
-     * Create a new notification instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Get the notification's delivery channels.
      *
-     * @param  mixed  $notifiable
+     * @param mixed $notifiable
      * @return array
      */
     public function via($notifiable)
@@ -36,17 +26,15 @@ class DailyMailNotification extends Notification implements ShouldQueue
     /**
      * Get the mail representation of the notification.
      *
-     * @param  mixed  $notifiable
+     * @param mixed $notifiable
      * @return MailMessage
      */
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->greeting('Hello there!')
-                    ->line('Good Morning.')
-                    ->line('Here is your daily dose of inspiration')
-                    ->line(Inspiring::quote())
-                    ->salutation('(a bot)');
+            ->greeting('Good Morning')
+            ->line('" '.Inspiring::quote().' "')
+            ->salutation('(a bot)');
     }
 
 }
