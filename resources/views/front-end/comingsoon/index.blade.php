@@ -1,4 +1,4 @@
-@extends('layouts.welcome')
+@extends('front-end.layouts.welcome')
 
 @section('content')
     <main class="container mx-auto h-screen flex md:items-center justify-center pt-24 md:pt-0">

@@ -7,8 +7,8 @@ use Illuminate\View\View;
 
 class Breadcrumb extends Component
 {
-    public array $links;
-    public string $currentPage;
+    public $links;
+    public $currentPage;
 
     /**
      * Create a new component instance.
@@ -29,6 +29,6 @@ class Breadcrumb extends Component
      */
     public function render()
     {
-        return view('components.breadcrumb');
+        return view('front-end.components.breadcrumb');
     }
 }

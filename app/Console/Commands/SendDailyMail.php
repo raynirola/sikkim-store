@@ -38,7 +38,7 @@ class SendDailyMail extends Command
      */
     public function handle()
     {
-        foreach (Subscription::query()->where('active',true)->get() as $sub){
+        foreach (Subscription::query()->where('active', true)->get() as $sub) {
             $sub->notify((new DailyMailNotification())->onQueue('dailyMail'));
         }
     }

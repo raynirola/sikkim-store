@@ -10,7 +10,7 @@ class ComingSoonController extends Controller
      */
     public function __invoke()
     {
-        return view('welcome');
+        return view('front-end.comingsoon.index');
     }
 
 }

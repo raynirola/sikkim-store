@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('front-end.layouts.app')
 
 @section('content')
     <main class="container mx-auto">

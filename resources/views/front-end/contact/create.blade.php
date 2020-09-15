@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('front-end.layouts.app')
 
 @section('content')
     <x-breadcrumb currentPage="Contact Us" :links="[]"/>

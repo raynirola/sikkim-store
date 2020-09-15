@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('front-end.layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container mx-auto py-10 max-w-6xl">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
