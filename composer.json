@@ -14,7 +14,8 @@
         "guzzlehttp/guzzle": "^6.5.5",
         "laravel/framework": "^v7.27.0",
         "laravel/tinker": "^v2.4.2",
-        "laravel/ui": "^v2.2.0"
+        "laravel/ui": "^v2.2.0",
+        "livewire/livewire": "^2.2"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
