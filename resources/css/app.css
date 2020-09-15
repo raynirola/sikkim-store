@@ -9,6 +9,6 @@
 
 .bg-gradient-overlay {
     background: rgb(1,84,3);
-    background: linear-gradient(90deg, rgba(1,84,3,0.8) 0%, rgba(1,88,144,0.8) 50%, rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 100%);
     backdrop-filter: blur(2px);
 }
