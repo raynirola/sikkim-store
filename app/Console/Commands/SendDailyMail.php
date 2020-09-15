@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands;
 
+use App\Notifications\DailyMailNotification;
 use App\Subscription;
 use Illuminate\Console\Command;
-use App\Notifications\DailyMailNotification;
 
 class SendDailyMail extends Command
 {
@@ -39,7 +39,7 @@ class SendDailyMail extends Command
     public function handle()
     {
         foreach (Subscription::query()->where('active',true)->get() as $sub){
-            $sub->notify(new DailyMailNotification());
+            $sub->notify((new DailyMailNotification())->onQueue('dailyMail'));
         }
     }
 }

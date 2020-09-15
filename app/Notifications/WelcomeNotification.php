@@ -3,9 +3,9 @@
 namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+use Illuminate\Notifications\Notification;
 
 class WelcomeNotification extends Notification implements ShouldQueue
 {
@@ -33,7 +33,7 @@ class WelcomeNotification extends Notification implements ShouldQueue
         return (new MailMessage)
             ->success()
             ->line('Welcome to Sikkim Store')
-            ->line('Thank you for subscribing to your newsletter, you are part of a great adventure.')
+            ->line('Thank you for subscribing to our newsletter, you are now a part of a great adventure.')
             ->line('If you didnt subscribe, you can always unsubscribe.')
             ->action('Unsubscribe', url('/', ''))
             ->line('Thank you for using our application!');
