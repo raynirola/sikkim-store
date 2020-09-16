@@ -88,113 +88,16 @@
                 </div>
             </div>
             <div class="flex-1 p-8 flex flex-col justify-center">
-                <div class="font-titleFont text-base text-secondary-700 font-medium mb-8 mt-8 text-center">Write to Us
+                <div class="font-titleFont text-base text-secondary-700 font-medium mb-4 mt-8 text-center">
+                    Write to Us
                 </div>
-                <div class="flex flex-col justify-center mx-auto lg:w-4/6">
-                    <form id="contact-form"
-                          action="{{ route('contact.store') }}"
-                          method="post">
-                        @csrf
-                        <div class="mb-2">
-                            <label for="name"
-                                   class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Name</label>
-                            <input id="name"
-                                   name="name"
-                                   value="{{old('name')}}"
-                                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5"
-                                   placeholder="John Doe"
-                                   type="text">
-                            @error('name')
-                            <span
-                                class="pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600">{{$message}}</span>
-                            @enderror
-                        </div>
-                        <div class="mb-2">
-                            <label for="email"
-                                   class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Email</label>
-                            <input id="email"
-                                   name="email"
-                                   value="{{old('email')}}"
-                                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5"
-                                   placeholder="johndoe@mail.com"
-                                   type="email">
-                            @error('email')
-                            <span
-                                class="pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600">{{$message}}</span>
-                            @enderror
-                        </div>
-                        <div class="mb-2">
-                            <label for="message"
-                                   class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Message</label>
-                            <textarea id="message"
-                                      name="message"
-                                      class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5 h-32 resize-none"
-                                      placeholder="Something interesting perhaps.">{{old('message')}}</textarea>
-                            @error('message')
-                            <span
-                                class="pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600">{{$message}}</span>
-                            @enderror
-                        </div>
-                        <button
-                            type="submit"
-                            class="mt-4 md:mt-0 font-bodyFont group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm leading-5 font-normal rounded-md text-secondary-200 bg-brand-700 hover:bg-brand-600 focus:outline-none focus:border-brand-600 focus:shadow-outline-green active:bg-brand-700 transition duration-150 ease-in-out">
-                            <p class="group-hover:text-white uppercase md:capitalize">Send Message</p>
-                        </button>
-                    </form>
-                    <p class="font-bodyFont tracking-tight text-xs text-secondary-500 mt-3">
-                        We won't spam your email, you can trust us. We hate spams as much as you do.
-                    </p>
-                </div>
+                <livewire:contact-form/>
             </div>
         </div>
     </section>
     <section class="bg-pattern -mt-20">
         <div class="container mx-auto pt-40 pb-24 max-w-3xl text-center">
-            <div class="flex flex-col justify-center items-center p-8">
-                <p class="font-titleFont uppercase text-lg tracking-wide text-secondary-800 mb-4">Subscribe to our
-                    newsletter</p>
-                <p class="font-bodyFont text-xs text-secondary-500 leading-6 mb-4">
-                    Be the first to know about what we are up to, and get latest news, blogs, updates and maybe offers.
-                    Stay in touch with us, subscribe to your mailing list.
-                </p>
-                <form action="{{ route('subscription.store') }}" method="post" class="hidden md:block w-full md:w-2/3">
-                    @csrf
-                    <div class="flex flex-col justify-start">
-                        <div class="flex items-center relative">
-                            <label for="emailSubs"></label>
-                            <input id="emailSubs" type="text" placeholder="Enter your email" name="subscriber_email"
-                                   class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont">
-                            <button type="submit"
-                                class="text-sm flex items-center justify-center h-full py-3 px-8 absolute top-0 right-0 text-secondary-200  border-l bg-brand-700 rounded-r-md hover:text-white hover:bg-brand-600">
-                                Subscribe
-                            </button>
-                        </div>
-                        @error('subscriber_email')
-                        <span
-                            class="mt-1 pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600 text-left">{{$message}}</span>
-                        @enderror
-                    </div>
-                </form>
-                <form action="{{ route('subscription.store') }}" method="post" class="md:hidden w-full md:w-2/3">
-                    @csrf
-                    <div class="flex flex-col justify-start">
-                        <div class="flex flex-col">
-                            <label for="emailSubs"></label>
-                            <input
-                                class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont"
-                                id="emailSubs" type="text" placeholder="Enter your email" name="subscriber_email">
-                            @error('subscriber_email')
-                            <span
-                                class="mt-1 pl-1 text-xs font-normal font-bodyFont tracking-tight text-red-600 text-left">{{$message}}</span>
-                            @enderror
-                            <button type="submit"
-                                class="mt-4 uppercase md:capitalize text-sm flex items-center justify-center h-full py-3 px-8 text-secondary-200  bg-brand-700 rounded-md hover:text-white hover:bg-brand-600">
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <livewire:newsletter-form/>
         </div>
     </section>
 
@@ -211,8 +114,11 @@
                 <button class="focus:outline-none"
                         @click="open = !open">
                     <div class="flex items-center justify-center p-1 bg-white rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-red-700">
-                            <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                             class="w-5 h-5 text-red-700">
+                            <path fill-rule="evenodd"
+                                  d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                                  clip-rule="evenodd"/>
                         </svg>
                     </div>
 
