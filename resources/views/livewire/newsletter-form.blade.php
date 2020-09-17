@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-center items-center p-8" x-data="{open : true}">
+<div class="flex flex-col justify-center items-center p-6 md:p-8" x-data="{open : true}">
     <p class="font-titleFont uppercase text-lg tracking-wide text-secondary-800 mb-4">Subscribe to our
         newsletter</p>
     <p class="font-bodyFont text-xs text-secondary-500 leading-6 mb-4">
@@ -45,7 +45,7 @@
             <div class="flex flex-col">
                 <label for="emailSubsResponsive"></label>
                 <input
-                    class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont"
+                    class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-base font-bodyFont"
                     id="emailSubsResponsive"
                     wire:model.debounce.200ms="subscriber_email"
                     type="text" placeholder="Enter your email" autocomplete="off"

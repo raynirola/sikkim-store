@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-1 p-8 flex flex-col justify-center">
+            <div class="flex-1 p-2 md:p-8 flex flex-col justify-center">
                 <div class="font-titleFont text-base text-secondary-700 font-medium mb-4 mt-8 text-center">
                     Write to Us
                 </div>

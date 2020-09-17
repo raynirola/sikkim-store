@@ -43,7 +43,7 @@
             <input id="name"
                    wire:model.lazy="name"
                    name="name" value="{{old('name')}}"
-                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5"
+                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5"
                    placeholder="John Doe"
                    type="text">
             @error('name')
@@ -57,7 +57,7 @@
             <input id="email"
                    wire:model.lazy="email"
                    name="email" value="{{old('email')}}"
-                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5"
+                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5"
                    placeholder="johndoe@mail.com"
                    type="email">
             @error('email')
@@ -71,7 +71,7 @@
             <textarea id="message"
                       wire:model.lazy="message"
                       name="message"
-                      class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-xs font-bodyFont sm:leading-5 h-32 resize-none"
+                      class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5 h-32 resize-none"
                       placeholder="Something interesting perhaps.">{{old('message')}}</textarea>
             @error('message')
             <span
