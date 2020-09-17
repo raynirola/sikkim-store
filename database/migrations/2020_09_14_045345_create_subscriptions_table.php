@@ -17,6 +17,7 @@ class CreateSubscriptionsTable extends Migration
             $table->id();
             $table->string('subscriber_email');
             $table->boolean('active')->default(true);
+            $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
     }

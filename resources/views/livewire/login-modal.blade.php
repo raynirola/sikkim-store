@@ -23,19 +23,22 @@
                     <h2 class="font-titleFont text-center text-lg md:text-xl tracking-wide leading-9 font-normal text-gray-900">
                         Sign in to your account
                     </h2>
-                    <p class="mt-1 text-center text-xs md:text-sm leading-5 text-gray-600">
-                        Or
-                        <a href="{{ '/register' }}"
-                           class="inline-flex items-center font-medium text-green-600 hover:text-green-500 focus:outline-none focus:underline transition ease-in-out duration-150">
-                            Register for free
-                            <svg class="h-4 w-4 md:w-5 md:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                 fill="currentColor">
-                                <path fill-rule="evenodd"
-                                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                                      clip-rule="evenodd"/>
-                            </svg>
-                        </a>
-                    </p>
+                    @if(Route::has('register'))
+                        <p class="mt-1 text-center text-xs md:text-sm leading-5 text-gray-600">
+                            Or
+                            <a href="{{ '/register' }}"
+                               class="inline-flex items-center font-medium text-green-600 hover:text-green-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                                Register for free
+                                <svg class="h-4 w-4 md:w-5 md:h-5" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 20 20"
+                                     fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                          clip-rule="evenodd"/>
+                                </svg>
+                            </a>
+                        </p>
+                    @endif
                 </div>
                 <form class="mt-8"
                       wire:submit.prevent="submit">
@@ -70,13 +73,14 @@
                                 Remember me
                             </label>
                         </div>
-
-                        <div class="text-sm leading-5">
-                            <a href="{{ '/password/reset/' }}"
-                               class="font-normal text-brand-700 underline hover:text-brand-600 focus:outline-none focus:underline transition ease-in-out duration-150">
-                                Forgot your password?
-                            </a>
-                        </div>
+                        @if(Route::has('password.reset'))
+                            <div class="text-sm leading-5">
+                                <a href="{{ '/password/reset/' }}"
+                                   class="font-normal text-brand-700 underline hover:text-brand-600 focus:outline-none focus:underline transition ease-in-out duration-150">
+                                    Forgot your password?
+                                </a>
+                            </div>
+                        @endif
                     </div>
 
                     <div class="mt-6">

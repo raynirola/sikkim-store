@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Http\Requests\EmailSubscriptionRequest;
-use App\Notifications\WelcomeNotification;
+use App\Notifications\SubscriptionVerificationNotification;
 use App\Subscription;
 use Livewire\Component;
 
@@ -28,13 +28,21 @@ class NewsletterForm extends Component
 
     public function subscribe()
     {
-        Subscription::create($this->validate())->notify( new WelcomeNotification());
+        $this->emailExists() ?: tap(Subscription::create($this->validate()), function ($subscription) {
+            $subscription->notify(new SubscriptionVerificationNotification($subscription));
+        });
         $this->reset();
-        session()->flash('success', 'Success, You are now subscribed!');
+        session()->flash('info', 'Verification email will be sent upon successful subscription, please check your email inbox.');
     }
 
     public function render()
     {
         return view('livewire.newsletter-form');
+    }
+
+    private function emailExists()
+    {
+        return
+            Subscription::query()->where('subscriber_email', $this->subscriber_email)->count();
     }
 }

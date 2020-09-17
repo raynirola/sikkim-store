@@ -24,7 +24,7 @@ class EmailSubscriptionRequest extends FormRequest
     public function rules()
     {
         return [
-            'subscriber_email' => ['required', 'email', 'unique:subscriptions,subscriber_email', 'email:rfc,dns']
+            'subscriber_email' => ['required', 'email', 'email:rfc,dns']
         ];
     }
 
@@ -38,7 +38,6 @@ class EmailSubscriptionRequest extends FormRequest
         return [
             'required' => 'Email is required.',
             'email' => 'Email must be a valid email address.',
-            'unique' => 'Email already subscribed.'
         ];
     }
 

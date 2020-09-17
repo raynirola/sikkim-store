@@ -14,7 +14,7 @@ class Subscription extends Model
      *
      * @var array
      */
-    protected $fillable = ['subscriber_email'];
+    protected $fillable = ['subscriber_email', 'active', 'email_verified_at'];
 
 
     /**
@@ -25,6 +25,7 @@ class Subscription extends Model
     protected $casts = [
         'active' => 'boolean',
         'subscriber_email' => 'string',
+        'email_verified_at' => 'datetime'
     ];
 
     /**
@@ -37,6 +38,8 @@ class Subscription extends Model
         return $this->subscriber_email;
     }
 
-
-
+    public function getRouteKeyName()
+    {
+        return 'subscriber_email';
+    }
 }

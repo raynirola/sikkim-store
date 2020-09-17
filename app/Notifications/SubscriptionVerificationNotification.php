@@ -9,7 +9,7 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\URL;
 
-class WelcomeNotification extends Notification implements ShouldQueue
+class SubscriptionVerificationNotification extends Notification implements ShouldQueue
 {
     use Queueable;
 
@@ -18,12 +18,15 @@ class WelcomeNotification extends Notification implements ShouldQueue
      */
     private $subscription;
 
+    /**
+     * Create a new notification instance.
+     *
+     * @param Subscription $subscription
+     */
     public function __construct(Subscription $subscription)
     {
-
         $this->subscription = $subscription;
     }
-
 
     /**
      * Get the notification's delivery channels.
@@ -45,17 +48,14 @@ class WelcomeNotification extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('Subscription Confirmed')
-            ->success()
-            ->line('Welcome to Sikkim Store')
-            ->line('Thank you for subscribing to our newsletter, you are now a part of a great adventure.')
-            ->line('If you didnt subscribe, you can always unsubscribe.')
-            ->action('Unsubscribe', url($this->signedUrl()))
+            ->subject('Subscription Verification')
+            ->line('Please verify your email address.')
+            ->action('Verify', url($this->signedUrl()))
             ->line('Thank you for using our application!');
     }
 
     private function signedUrl()
     {
-        return URL::signedRoute('subscription.destroy', ['subscription' => $this->subscription->email]);
+        return URL::temporarySignedRoute('subscription.verify', now()->addMinutes(30), ['subscription' => $this->subscription->email]);
     }
 }
