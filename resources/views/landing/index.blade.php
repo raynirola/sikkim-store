@@ -38,7 +38,7 @@
                         essential, overnight.
                         <br>
                         So get your own store in just a click. And get your first 2 months free.</p>
-                    <div x-data="{modal : true, toast : true}">
+                    <div x-data="{modal : false, toast : true}">
                         <p class="text-gray-300 text-xs mb-2">Sign up for early access when we launch.</p>
                         <button type="button" x-on:click="modal = true"
                                 class="py-3 w-full bg-gray-200 hover:bg-brand-700 text-brand-700 hover:text-gray-100 max-w-full md:max-w-sm rounded-md shadow-md text-center transition ease-in-out duration-150">
