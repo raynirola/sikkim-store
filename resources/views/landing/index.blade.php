@@ -38,10 +38,15 @@
                         essential, overnight.
                         <br>
                         So get your own store in just a click. And get your first 2 months free.</p>
-                    <p class="text-gray-300 text-xs mb-2">Sign up for early access when we launch.</p>
-                    <a href=""
-                       class="py-3 inline-block bg-gray-200 hover:bg-brand-700 text-brand-700 hover:text-gray-100 max-w-full md:max-w-sm rounded-md shadow-md text-center transition ease-in-out duration-150">Sign
-                        up</a>
+                    <div x-data="{modal : true, toast : true}">
+                        <p class="text-gray-300 text-xs mb-2">Sign up for early access when we launch.</p>
+                        <button type="button" x-on:click="modal = true"
+                                class="py-3 w-full bg-gray-200 hover:bg-brand-700 text-brand-700 hover:text-gray-100 max-w-full md:max-w-sm rounded-md shadow-md text-center transition ease-in-out duration-150">
+                            Sign
+                            up
+                        </button>
+                        <livewire:early-access-preview-registration/>
+                    </div>
                 </div>
                 <div class="w-full md:w-2/5 mb-4 md:mb-0 max-w-lgf">
                     <img src="{{ asset('sikkim_store_svg/hero.svg') }}" alt="">
@@ -63,9 +68,7 @@
                 <div class="flex-1 max-w-lg">
                     <h3 class="text-lg md:text-2xl mb-4">What you sell is 100% yours.</h3>
                     <p class="text-gray-500 text-sm md:text-base">Unlike many other sites, the sales that you make are
-                        100% yours. We don’t
-                        take any percentage
-                        whatsoever.</p>
+                        100% yours. We don’t take any percentage whatsoever.</p>
                 </div>
                 <img class="w-1/3 md:w-2/6" src="{{ asset('sikkim_store_svg/sell.svg') }}" alt="">
             </div>
@@ -92,8 +95,7 @@
                 <div class="flex-1 max-w-lg">
                     <h3 class="text-lg md:text-2xl mb-4">Everything’s included</h3>
                     <p class="text-gray-500 text-sm md:text-bas">We take care of everything – from hosting to
-                        maintaining it. That’s
-                        upgrades, updates, bug fixes, and any third-party changes.</p>
+                        maintaining it. That’s upgrades, updates, bug fixes, and any third-party changes.</p>
                 </div>
                 <img class="w-1/3 md:w-2/6" src="{{ asset('sikkim_store_svg/complete.svg') }}" alt="">
             </div>
@@ -105,8 +107,8 @@
                 <div class="flex-1 max-w-lg text-right">
                     <h3 class="text-lg md:text-2xl mb-4 text-brand-700">Scalability? No worries.</h3>
                     <p class="text-gray-500 text-sm md:text-bas">You don’t have to worry about scalability, or downtime
-                        ever. Our system
-                        runs on the latest technology and software stack that handles scaling like a breeze. </p>
+                        ever. Our system runs on the latest technology and software stack that handles scaling like a
+                        breeze. </p>
                 </div>
                 <img class="w-1/3 md:w-2/6" src="{{ asset('sikkim_store_svg/scale.svg') }}" alt="">
             </div>
@@ -118,8 +120,7 @@
                 <div class="flex-1 max-w-lg">
                     <h3 class="text-lg md:text-2xl mb-4">No hidden charges.</h3>
                     <p class="text-gray-500 text-sm md:text-bas">How much for all these? Just a minimal ₹ 3000.00 per
-                        month or ₹ 32,000.00
-                        per year, no hidden charges. </p>
+                        month or ₹ 32,000.00 per year, no hidden charges. </p>
                 </div>
                 <img class="w-1/3 md:w-2/6" src="{{ asset('sikkim_store_svg/hidden.svg') }}" alt="">
             </div>
@@ -133,16 +134,15 @@
                          alt="">
                     <p class="text-lg mb-2 text-gray-100 mt-6">Your site is yours, completely.</p>
                     <p class="text-xs text-gray-400">Your site, be that free subdomain or your own domain, you have
-                        complete freedom
-                        to customise it, branding, logo and even colour schemes. Your own terms and conditions, and
-                        footer as well.</p>
+                        complete freedom to customise it, branding, logo and even colour schemes. Your own terms and
+                        conditions, and footer as well.</p>
                 </div>
                 <div class="text-center">
                     <img src="{{ asset('sikkim_store_svg/admin2.svg') }}" class="p-4 w-52 mx-auto h-36" alt="">
                     <p class="text-lg mb-2 text-gray-100 mt-6">Admin Dashboard.</p>
-                    <p class="text-xs text-gray-400">Your site, be that free subdomain or your own domain, you have
-                        complete freedom to customize it, branding, logo, and even color schemes. Your own terms and
-                        conditions, and footer as well. </p>
+                    <p class="text-xs text-gray-400">Your store comes with a highly sophisticated admin dashboard. Easy
+                        product update, add, or delete. Shop performance with beautiful graphical representation. See
+                        all your order details and sell progress and many more. </p>
                 </div>
                 <div class="text-right">
                     <img src="{{ asset('sikkim_store_svg/gateway.svg') }}" class="p-4 w-52 mx-auto h-36" alt="">
@@ -162,9 +162,14 @@
                     <h4 class="text-sm md:text-lg text-gray-500">Sign up for early access and 2 months free.</h4>
                 </div>
                 <div class="flex-1 flex items-center space-x-6 w-full mt-6 md:mt-0">
-                    <a href=""
-                       class="bg-brand-700 hover:bg-brand-600 rounded-md py-3 w-full text-center text-gray-200 transition ease-in-out duration-200">Sign
-                        up</a>
+                    <div x-data="{modal : false, toast : true}" class="w-full">
+                        <button type="button"
+                                x-on:click="modal = true"
+                                class="bg-brand-700 hover:bg-brand-600 rounded-md py-3 w-full text-center text-gray-200 transition ease-in-out duration-200">
+                            Sign up
+                        </button>
+                        <livewire:early-access-preview-registration/>
+                    </div>
                     <a href=""
                        class="bg-gray-800 hover:bg-gray-900 border border-gray-500 rounded-md py-3 w-full text-center transition ease-in-out duration-200 text-gray-100 ">
                         Learn more</a>

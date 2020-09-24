@@ -13,9 +13,8 @@
     backdrop-filter: blur(2px);
 }
 
-.bg-gradient-overlay {
-    background: rgb(1, 84, 3);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+.bg-filter {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.6) 100%);
     backdrop-filter: blur(2px);
 }
 
