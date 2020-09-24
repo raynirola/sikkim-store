@@ -15,3 +15,4 @@ Route::middleware('signed')->group(function () {
     Route::get('/unsubscribe/{subscription}', 'SubscriptionController@destroy')
         ->name('subscription.destroy');
 });
+Route::get('/landing', 'LandingPageController')->name('landing.page');

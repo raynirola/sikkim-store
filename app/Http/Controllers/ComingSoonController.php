@@ -10,7 +10,7 @@ class ComingSoonController extends Controller
      */
     public function __invoke()
     {
-        return redirect()->action([ContactController::class, 'index'] );
+        return redirect()->action([LandingPageController::class]);
     }
 
 }
