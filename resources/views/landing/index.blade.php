@@ -48,7 +48,7 @@
                         <livewire:early-access-preview-registration/>
                     </div>
                 </div>
-                <div class="w-full md:w-2/5 mb-4 md:mb-0 max-w-lgf">
+                <div class="w-full md:w-2/5 mb-4 md:mb-0 max-w-lg">
                     <img src="{{ asset('sikkim_store_svg/hero.svg') }}" alt="">
                 </div>
             </div>
@@ -94,7 +94,7 @@
             <div class="flex items-center justify-between">
                 <div class="flex-1 max-w-lg">
                     <h3 class="text-lg md:text-2xl mb-4">Everything’s included</h3>
-                    <p class="text-gray-500 text-sm md:text-bas">We take care of everything – from hosting to
+                    <p class="text-gray-500 text-sm md:text-base">We take care of everything – from hosting to
                         maintaining it. That’s upgrades, updates, bug fixes, and any third-party changes.</p>
                 </div>
                 <img class="w-1/3 md:w-2/6" src="{{ asset('sikkim_store_svg/complete.svg') }}" alt="">
@@ -106,7 +106,7 @@
             <div class="flex items-center justify-between flex-row-reverse">
                 <div class="flex-1 max-w-lg text-right">
                     <h3 class="text-lg md:text-2xl mb-4 text-brand-700">Scalability? No worries.</h3>
-                    <p class="text-gray-500 text-sm md:text-bas">You don’t have to worry about scalability, or downtime
+                    <p class="text-gray-500 text-sm md:text-base">You don’t have to worry about scalability, or downtime
                         ever. Our system runs on the latest technology and software stack that handles scaling like a
                         breeze. </p>
                 </div>
@@ -119,7 +119,7 @@
             <div class="flex items-center justify-between">
                 <div class="flex-1 max-w-lg">
                     <h3 class="text-lg md:text-2xl mb-4">No hidden charges.</h3>
-                    <p class="text-gray-500 text-sm md:text-bas">How much for all these? Just a minimal ₹ 3000.00 per
+                    <p class="text-gray-500 text-sm md:text-base">How much for all these? Just a minimal ₹ 3000.00 per
                         month or ₹ 32,000.00 per year, no hidden charges. </p>
                 </div>
                 <img class="w-1/3 md:w-2/6" src="{{ asset('sikkim_store_svg/hidden.svg') }}" alt="">
@@ -133,21 +133,24 @@
                     <img src="{{ asset('sikkim_store_svg/customise.svg') }}" class="p-4 w-52 mx-auto h-36"
                          alt="">
                     <p class="text-lg mb-2 text-gray-100 mt-6">Your site is yours, completely.</p>
-                    <p class="text-xs text-gray-400">Your site, be that free subdomain or your own domain, you have
+                    <p class="text-xs text-gray-300 text-justify tracking-wide">Your site, be that free subdomain or
+                        your own domain, you have
                         complete freedom to customise it, branding, logo and even colour schemes. Your own terms and
                         conditions, and footer as well.</p>
                 </div>
                 <div class="text-center">
                     <img src="{{ asset('sikkim_store_svg/admin2.svg') }}" class="p-4 w-52 mx-auto h-36" alt="">
                     <p class="text-lg mb-2 text-gray-100 mt-6">Admin Dashboard.</p>
-                    <p class="text-xs text-gray-400">Your store comes with a highly sophisticated admin dashboard. Easy
+                    <p class="text-xs text-gray-300 text-justify tracking-wide">Your store comes with a highly
+                        sophisticated admin dashboard. Easy
                         product update, add, or delete. Shop performance with beautiful graphical representation. See
                         all your order details and sell progress and many more. </p>
                 </div>
                 <div class="text-right">
                     <img src="{{ asset('sikkim_store_svg/gateway.svg') }}" class="p-4 w-52 mx-auto h-36" alt="">
                     <p class="text-lg mb-2 text-gray-100 mt-6">Payment Gateway.</p>
-                    <p class="text-xs text-gray-400">To make it even better, we will set up your own payment gateway
+                    <p class="text-xs text-gray-300 text-justify tracking-wide">To make it even better, we will set up
+                        your own payment gateway
                         integration upon signup with Razorpay. All the transactions straight from and to your bank
                         account. </p>
                 </div>
