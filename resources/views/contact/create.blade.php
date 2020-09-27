@@ -10,7 +10,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sikkim.store/">
+    <meta property="og:url" content="https://sikkim.store/contact">
     <meta property="og:title" content="Sikkim Store - Contact Us">
     <meta property="og:description"
           content="Contact Us, Feedback and Newsletter Signup. Sikkim Store - Multi-Vendor, Multi-Tenant E-Commerce for Sikkim. Opportunity for everyone. Empowering local producers and sellers.">
@@ -18,7 +18,7 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="{{ 'https://www.sikkim.store/' }}">
+    <meta property="twitter:url" content="{{ 'https://sikkim.store/contact' }}">
     <meta property="twitter:title" content="{{ 'Sikkim Store - Contact Us' }}">
     <meta property="twitter:description"
           content="{{ 'SContact Us, Feedback and Newsletter Signup. Sikkim Store - Multi-Vendor, Multi-Tenant E-Commerce for Sikkim. Opportunity for everyone. Empowering local producers and sellers.' }}">
