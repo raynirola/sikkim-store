@@ -14,7 +14,7 @@ class Preorder extends Model
     public function getInitialAttribute()
     {
         [$firstName, $lastname] = explode(' ', $this->name);
-        return Str::substr($firstName, 0, 1) . Str::substr($lastname, 0, 1);
+        return Str::upper(Str::substr($firstName, 0, 1) . Str::substr($lastname, 0, 1));
     }
 
     public function getPhoneAttribute()
