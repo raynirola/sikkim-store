@@ -3,6 +3,7 @@
 @section('content')
     <section class="py-12">
         <div class="container max-w-6xl mx-auto">
+            <div class="font-bodyFont mb-2 uppercase tracking-wide text-gray-700">Preorder Preview</div>
             <div class="flex flex-col mb-3">
                 <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -53,7 +54,7 @@
                                             </div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-no-wrap">
-                                            <div class="text-sm leading-5 text-gray-500">
+                                            <div class="text-sm leading-5 text-gray-900">
                                                 {{ $preorder->phone }}
                                             </div>
                                         </td>
