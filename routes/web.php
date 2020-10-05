@@ -14,5 +14,7 @@ Route::middleware('signed')->group(function () {
         ->name('subscription.verify');
     Route::get('/unsubscribe/{subscription}', 'SubscriptionController@destroy')
         ->name('subscription.destroy');
+    Route::get('/preorders', 'PreorderController@index')
+        ->name('preorders.index');
 });
 Route::get('/landing', 'LandingPageController')->name('landing.page');
