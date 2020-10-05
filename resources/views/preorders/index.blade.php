@@ -49,7 +49,7 @@
                                                 {{ $preorder->business }}
                                             </div>
                                             <div class="text-sm leading-5 text-gray-500">
-                                                Location: {{ 'N/A' }}
+                                                Registered {{ $preorder->created_at->diffForHumans()  }}
                                             </div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-no-wrap">
