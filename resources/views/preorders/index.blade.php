@@ -45,7 +45,7 @@
                                             </div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-no-wrap">
-                                            <div class="text-sm leading-5 text-gray-900">
+                                            <div class="text-sm leading-5 text-gray-900 capitalize">
                                                 {{ $preorder->business }}
                                             </div>
                                             <div class="text-sm leading-5 text-gray-500">
