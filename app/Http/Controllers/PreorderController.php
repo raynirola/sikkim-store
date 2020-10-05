@@ -15,7 +15,7 @@ class PreorderController extends Controller
     public function index()
     {
         return view('preorders.index', [
-            'preorders' => Preorder::query()->latest()->paginate(5),
+            'preorders' => Preorder::query()->latest()->get(),
         ]);
     }
 }
