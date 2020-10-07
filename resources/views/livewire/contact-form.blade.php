@@ -41,8 +41,8 @@
             <label for="name"
                    class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Name</label>
             <input id="name"
-                   wire:model.lazy="name"
-                   name="name" value="{{old('name')}}"
+                   wire:model.defer="name"
+                   name="name"
                    class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5"
                    placeholder="John Doe"
                    type="text">
@@ -55,8 +55,8 @@
             <label for="email"
                    class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Email</label>
             <input id="email"
-                   wire:model.lazy="email"
-                   name="email" value="{{old('email')}}"
+                   wire:model.defer="email"
+                   name="email"
                    class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5"
                    placeholder="johndoe@mail.com"
                    type="email">
@@ -69,10 +69,10 @@
             <label for="message"
                    class="mb-1 text-xs font-bodyFont font-normal text-secondary-500">Message</label>
             <textarea id="message"
-                      wire:model.lazy="message"
+                      wire:model.defer="message"
                       name="message"
                       class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5 h-32 resize-none"
-                      placeholder="Something interesting perhaps.">{{old('message')}}</textarea>
+                      placeholder="Something interesting perhaps."></textarea>
             @error('message')
             <span
                 class="pl-2 text-xs font-normal font-bodyFont tracking-tight text-red-600">{{$message}}</span>
@@ -81,9 +81,11 @@
         <button
             type="submit"
             class="mt-4 md:mt-0 font-bodyFont group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm leading-5 font-normal rounded-md text-secondary-200 bg-brand-700 hover:bg-brand-600 focus:outline-none focus:border-brand-600 focus:shadow-outline-green active:bg-brand-700 transition duration-150 ease-in-out disabled:opacity-75"
-            wire:loadng.taget=submitContactForm"
+            wire:loading.target="submitContactForm"
+            wire:loading.class.remove="hover:bg-brand-600 focus:outline-none focus:border-brand-600 focus:shadow-outline-green active:bg-brand-700"
             wire:loading.attr="disabled">
-            <p class="group-hover:text-white uppercase md:capitalize">Send Message</p>
+            <p wire:loading.target="submitContactForm" wire:loading.remove
+               class="group-hover:text-white uppercase md:capitalize">Send Message</p>
             <svg class="animate-spin ml-3 h-5 w-5 text-white"
                  wire:loading wire:target="submitContactForm"
                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -93,7 +95,7 @@
             </svg>
         </button>
     </form>
-    <p class="font-bodyFont tracking-tight text-xs text-secondary-500 mt-3">
+        <p class="font-bodyFont tracking-tight text-xs text-secondary-500 mt-3">
         We won't spam your email, you can trust us. We hate spams as much as you do.
     </p>
 </div>

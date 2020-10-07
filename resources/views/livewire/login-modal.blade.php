@@ -9,7 +9,7 @@
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
         </svg>
     </button>
-    <div x-show="modal"
+    <div x-show.transition="modal"
          class="px-0 pb-0 md:pb-0 md:px-0 fixed top-0 inset-0 z-30 w-screen h-screen bg-gradient-overlay">
         <div class="h-full w-full flex items-end md:items-center justify-center">
             <div

@@ -12,13 +12,13 @@
             <div class="flex items-center relative">
                 <label for="emailSubs"></label>
                 <input id="emailSubs"
-                       wire:model.debounce.200ms="subscriber_email"
+                       wire:model.defer="subscriber_email"
                        type="text" placeholder="Enter your email" autocomplete="off"
                        name="subscriber_email"
                        class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont">
                 <button type="submit"
                         class="text-sm flex items-center justify-center h-full py-3 px-8 absolute top-0 right-0 text-secondary-200  border-l bg-brand-700 rounded-r-md hover:text-white hover:bg-brand-600 disabled:opacity-75"
-                        wire:loadng.taget=subscribe"
+                        wire:loading.target="subscribe"
                         wire:loading.attr="disabled">
                     Subscribe
                     <svg class="animate-spin ml-3 h-5 w-5 text-white"
@@ -47,7 +47,7 @@
                 <input
                     class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-base font-bodyFont"
                     id="emailSubsResponsive"
-                    wire:model.debounce.200ms="subscriber_email"
+                    wire:model.defer="subscriber_email"
                     type="text" placeholder="Enter your email" autocomplete="off"
                     name="subscriber_email">
                 @error('subscriber_email')
@@ -56,7 +56,7 @@
                 @enderror
                 <button type="submit"
                         class="mt-4 uppercase md:capitalize text-sm flex items-center justify-center h-full py-3 px-8 text-secondary-200  bg-brand-700 rounded-md hover:text-white hover:bg-brand-600 disabled:opacity-75"
-                        wire:loadng.taget=subscribe"
+                        wire:loading.target="subscribe"
                         wire:loading.attr="disabled">
                     Subscribe
                     <svg class="animate-spin ml-3 h-5 w-5 text-white"

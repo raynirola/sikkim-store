@@ -21,11 +21,6 @@ class NewsletterForm extends Component
         return (new EmailSubscriptionRequest())->messages();
     }
 
-    public function updated($propertyName)
-    {
-        $this->validateOnly($propertyName);
-    }
-
     public function subscribe()
     {
         $this->emailExists() ?: tap(Subscription::create($this->validate()), function ($subscription) {
@@ -42,7 +37,6 @@ class NewsletterForm extends Component
 
     private function emailExists()
     {
-        return
-            Subscription::query()->where('subscriber_email', $this->subscriber_email)->count();
+        return Subscription::query()->where('subscriber_email', $this->subscriber_email)->count();
     }
 }

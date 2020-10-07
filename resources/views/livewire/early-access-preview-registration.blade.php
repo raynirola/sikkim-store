@@ -1,4 +1,4 @@
-<div x-show="modal"
+<div x-show.transition="modal"
      class="px-0 pb-0 md:pb-0 md:px-0 fixed top-0 inset-0 z-30 w-screen h-screen bg-gradient-overlay">
     <div class="h-full w-full flex items-end md:items-center justify-center">
         <div
@@ -49,7 +49,7 @@
                 @csrf
                 <div class="">
                     <div>
-                        <input aria-label="Email address" wire:model.lazy="email"
+                        <input aria-label="Email address" wire:model.defer="email"
                                name="email" type="email" value="{{ old('email') }}" required
                                class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 @error('email'){{'border-red-500'}}@enderror placeholder-gray-500 text-gray-900  focus:outline-none focus:shadow-outline-blue focus:border-green-500 focus:z-10 text-base sm:text-sm sm:leading-5"
                                placeholder="Email address"/>
@@ -58,7 +58,7 @@
                         @enderror
                     </div>
                     <div class="mt-4">
-                        <input aria-label="Name" wire:model.lazy="name"
+                        <input aria-label="Name" wire:model.defer="name"
                                name="name" type="text" required
                                class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 @error('name'){{'border-red-500'}}@enderror placeholder-gray-500 text-gray-900 focus:outline-none focus:shadow-outline-blue focus:border-green-500 focus:z-10 text-base sm:text-sm sm:leading-5 relative"
                                placeholder="Full Name"/>
@@ -67,7 +67,7 @@
                         @enderror
                     </div>
                     <div class="mt-4">
-                        <input aria-label="Phone" wire:model.lazy="phone"
+                        <input aria-label="Phone" wire:model.defer="phone"
                                name="phone" type="tel" required
                                class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 @error('phone'){{'border-red-500'}}@enderror placeholder-gray-500 text-gray-900 focus:outline-none focus:shadow-outline-blue focus:border-green-500 focus:z-10 text-base sm:text-sm sm:leading-5 relative"
                                placeholder="Phone Number"/>
@@ -76,7 +76,7 @@
                         @enderror
                     </div>
                     <div class="mt-4">
-                        <input aria-label="Business Name" wire:model.lazy="business"
+                        <input aria-label="Business Name" wire:model.defer="business"
                                name="business" type="text" required
                                class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 @error('business'){{'border-red-500'}}@enderror placeholder-gray-500 text-gray-900 focus:outline-none focus:shadow-outline-blue focus:border-green-500 focus:z-10 text-base sm:text-sm sm:leading-5 relative"
                                placeholder="Business Name"/>
