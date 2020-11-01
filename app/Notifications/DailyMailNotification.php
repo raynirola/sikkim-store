@@ -12,6 +12,17 @@ class DailyMailNotification extends Notification implements ShouldQueue
 {
     use Queueable;
 
+    private $quote;
+    private $author;
+
+    public function __construct()
+    {
+        [$quote, $author] = explode('-', Inspiring::quote(), 2);
+        $this->quote = $quote;
+        $this->author = $author;
+    }
+
+
     /**
      * Get the notification's delivery channels.
      *
@@ -31,10 +42,8 @@ class DailyMailNotification extends Notification implements ShouldQueue
      */
     public function toMail($notifiable)
     {
-        return (new MailMessage)
-            ->subject('Your daily dose of Inspiration')
-            ->greeting('Good Morning')
-            ->line('" ' . Inspiring::quote() . ' "')
-            ->salutation('-(a bot)');
+        return (new MailMessage)->view(
+            'emails.dailyinspiringmail', ['author' => $this->author, 'quote' => $this->quote]
+        );
     }
 }
