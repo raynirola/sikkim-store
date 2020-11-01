@@ -1,743 +1,873 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      style="width:100%;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="initial-scale=1.0"> <!-- So that mobile webkit will display zoomed in -->
-    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
-    <title>[Sikkim Store] Early Access Information</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="telephone=no" name="format-detection">
+    <title>New email template 2020-11-01</title>
+    <!--[if (mso 16)]>
     <style type="text/css">
-        @font-face {
-            font-family: 'Proxima Nova';
-            src: url('https://assets.digitalocean.com/fonts/proximanova-reg-webfont.eot');
-            src: url('https://assets.digitalocean.com/fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
-            url('https://assets.digitalocean.com/fonts/proximanova-reg-webfont.woff') format('woff'),
-            url('https://assets.digitalocean.com/fonts/proximanova-reg-webfont.ttf') format('truetype'),
-            url('https://assets.digitalocean.com/fonts/proximanova-reg-webfont.svg#ProximaNovaLight') format('svg');
-            font-weight: normal;
-            font-style: normal;
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <![endif]-->
+    <!--[if gte mso 9]>
+    <style>sup {
+        font-size: 100% !important;
+    }</style><![endif]-->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG></o:AllowPNG>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+    <style type="text/css">
+        .rollover:hover .rollover-first {
+            max-height: 0px !important;
+            display: none !important;
         }
 
-        @font-face {
-            font-family: 'Proxima Nova';
-            src: url('https://assets.digitalocean.com/fonts/proximanova-light-webfont.eot');
-            src: url('https://assets.digitalocean.com/fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
-            url('https://assets.digitalocean.com/fonts/proximanova-light-webfont.woff') format('woff'),
-            url('https://assets.digitalocean.com/fonts/proximanova-light-webfont.ttf') format('truetype'),
-            url('https://assets.digitalocean.com/fonts/proximanova-light-webfont.svg#ProximaNovaLight') format('svg');
-            font-weight: 100;
-            font-style: normal;
+        .rollover:hover .rollover-second {
+            max-height: none !important;
+            display: block !important;
         }
 
-        /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
         #outlook a {
             padding: 0;
-        }
-
-        /* Force Outlook to provide a "view in browser" message */
-        .ReadMsgBody {
-            width: 100%;
         }
 
         .ExternalClass {
             width: 100%;
         }
 
-        /* Force Hotmail to display emails at full width */
-        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
             line-height: 100%;
         }
 
-        /* Force Hotmail to display normal line spacing */
-        body, table, td, p, a, li, blockquote {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
+        .es-button {
+            mso-style-priority: 100 !important;
+            text-decoration: none !important;
         }
 
-        /* Prevent WebKit and Windows mobile changing default text sizes */
-        table, td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
         }
 
-        /* Remove spacing between tables in Outlook 2007 and up */
-        img {
-            -ms-interpolation-mode: bicubic;
+        .es-desk-hidden {
+            display: none;
+            float: left;
+            overflow: hidden;
+            width: 0;
+            max-height: 0;
+            line-height: 0;
+            mso-hide: all;
         }
 
-        /* Allow smoother rendering of resized image in Internet Explorer */
-        /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
-        body {
-            margin: 0;
-            padding: 0;
+        .es-button-border:hover {
+            border-style: solid solid solid solid !important;
+            background: #0b317e !important;
+            border-color: #42d159 #42d159 #42d159 #42d159 !important;
         }
 
-        img {
-            border: 0;
-            height: auto;
-            line-height: 100%;
-            outline: none;
-            text-decoration: none;
+        .es-button-border:hover a.es-button {
+            background: #0b317e !important;
+            border-color: #0b317e !important;
         }
 
-        table {
-            border-collapse: collapse !important;
+        td .es-button-border:hover a.es-button-1 {
+            background: #0ac144 !important;
+            border-color: #0ac144 !important;
         }
 
-        body, #bodyTable, #bodyCell {
-            height: 100% !important;
-            margin: 0;
-            padding: 0;
-            width: 100% !important;
+        td .es-button-border-2:hover {
+            background: #0ac144 !important;
         }
 
-        /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
-        /* ========== Page Styles ========== */
-        #bodyCell {
-            padding: 20px;
-        }
-
-        #templateContainer {
-            width: 768px;
-        }
-
-        #templateContainer * {
-            -webkit-font-smoothing: antialiased;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-        }
-
-        /**
-        * @tab Page
-        * background style
-        * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
-        * @theme page
-        */
-        body, #bodyTable {
-            /*@editable*/
-            background-color: #F7F7F7;
-        }
-
-        /**
-        * @tab Page
-        * background style
-        * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
-        * @theme page
-        */
-        #bodyCell {
-
-        }
-
-        /**
-        * @tab Page
-        * email border
-        * @tip Set the border for your email.
-        */
-        #templateContainer {
-            /*@editable*/
-            border: 0 transparent #BBBBBB;
-        }
-
-        /**
-        * @tab Page
-        * heading 1
-        * @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-        * @style heading 1
-        */
-        h1 {
-            /*@editable*/
-            color: #202020 !important;
-            display: block;
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-            /*@editable*/
-            font-size: 26px;
-            /*@editable*/
-            font-style: normal;
-            /*@editable*/
-            font-weight: 100;
-            /*@editable*/
-            line-height: 100%;
-            /*@editable*/
-            letter-spacing: normal;
-            margin: 0 0 10px;
-            /*@editable*/
-            text-align: left;
-        }
-
-        /**
-        * @tab Page
-        * heading 2
-        * @tip Set the styling for all second-level headings in your emails.
-        * @style heading 2
-        */
-        h2 {
-            /*@editable*/
-            color: #404040 !important;
-            display: block;
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-            /*@editable*/
-            font-size: 28px;
-            /*@editable*/
-            font-style: normal;
-            /*@editable*/
-            font-weight: 100;
-            /*@editable*/
-            line-height: 140%;
-            /*@editable*/
-            letter-spacing: normal;
-            margin: 2px 0 15px;
-            /*@editable*/
-            text-align: left;
-            -webkit-font-smoothing: subpixel-antialiased;
-        }
-
-        /**
-        * @tab Page
-        * heading 3
-        * @tip Set the styling for all third-level headings in your emails.
-        * @style heading 3
-        */
-        h3 {
-            /*@editable*/
-            color: #595959 !important;
-            display: block;
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-            /*@editable*/
-            font-size: 20px;
-            /*@editable*/
-            font-style: normal;
-            /*@editable*/
-            font-weight: 300;
-            /*@editable*/
-            line-height: 140%;
-            /*@editable*/
-            letter-spacing: normal;
-            margin: 20px 0 17px;
-            /*@editable*/
-            text-align: left;
-            -webkit-font-smoothing: subpixel-antialiased;
-        }
-
-        /**
-        * @tab Page
-        * heading 4
-        * @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-        * @style heading 4
-        */
-        h4 {
-            /*@editable*/
-            color: #999 !important;
-            display: block;
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-            /*@editable*/
-            font-size: 14px;
-            /*@editable*/
-            font-style: normal;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            line-height: 100%;
-            /*@editable*/
-            letter-spacing: normal;
-            margin: 0 0 8px;
-            /*@editable*/
-            text-align: left;
-        }
-
-        /* ========== Header Styles ========== */
-        /**
-        * @tab Header
-        * preheader style
-        * @tip Set the background color and bottom border for your email's preheader area.
-        * @theme header
-        */
-        #templatePreheader {
-            /*@editable*/
-            background-color: #F7F7F7;
-        }
-
-        /**
-        * @tab Header
-        * preheader text
-        * @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
-        */
-        .preheaderContent {
-            /*@editable*/
-            color: #808080;
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-            /*@editable*/
-            font-size: 10px;
-            /*@editable*/
-            line-height: 125%;
-            /*@editable*/
-            text-align: left;
-        }
-
-        /**
-        * @tab Header
-        * preheader link
-        * @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
-        */
-        .preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */
-        .preheaderContent a .yshortcuts /* Yahoo! Mail Override */
-        {
-            /*@editable*/
-            color: #606060;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-
-        /**
-        * @tab Header
-        * header style
-        * @tip Set the background color and borders for your email's header area.
-        * @theme header
-        */
-        #templateHeader {
-            /*@editable*/
-            background-color: #F4F4F4;
-        }
-
-        /**
-        * @tab Header
-        * header text
-        * @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-        */
-        .headerContent {
-            /*@editable*/
-            color: #505050;
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-            /*@editable*/
-            font-size: 20px;
-            /*@editable*/
-            font-weight: bold;
-            /*@editable*/
-            line-height: 100%;
-            /*@editable*/
-            padding: 0;
-            /*@editable*/
-            text-align: left;
-            /*@editable*/
-            vertical-align: middle;
-        }
-
-        /**
-        * @tab Header
-        * header link
-        * @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
-        */
-        .headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */
-        .headerContent a .yshortcuts /* Yahoo! Mail Override */
-        {
-            /*@editable*/
-            color: #298eea;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-
-        #headerImage {
-            height: auto;
-            max-width: 768px;
-        }
-
-        /* ========== Body Styles ========== */
-        /**
-        * @tab Body
-        * body style
-        * @tip Set the background color and borders for your email's body area.
-        */
-        #templateBody {
-            /*@editable background-color:#fff; */
-        }
-
-        /**
-        * @tab Body
-        * body text
-        * @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-        * @theme main
-        */
-        .bodyContent {
-            /*@editable*/
-            color: #505050;
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-            /*@editable*/
-            font-size: 16px;
-            /*@editable*/
-            line-height: 160%;
-            /*@editable*/
-            padding: 35px 40px 40px;
-            background: #fff;
-            /*@editable*/
-            text-align: left;
-        }
-
-        .buttonContent {
-            background: #298eea
-        }
-
-        td td {
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-        }
-
-        /**
-        * @tab Body
-        * body link
-        * @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-        */
-        .bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */
-        .bodyContent a .yshortcuts /* Yahoo! Mail Override */
-        {
-            /*@editable*/
-            color: #298eea;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-
-        .bodyContent img {
-            display: inline;
-            height: auto;
-            max-width: 560px;
-        }
-
-        ul > ul {
-            margin-bottom: 15px;
-        }
-
-        /* ========== Footer Styles ========== */
-        /**
-        * @tab Footer
-        * footer style
-        * @tip Set the background color and borders for your email's footer area.
-        * @theme footer
-        */
-        #templateFooter {
-            /*@editable*/
-            background-color: #F7F7F7;
-            margin-top: 20px;
-        }
-
-        /**
-        * @tab Footer
-        * footer text
-        * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-        * @theme footer
-        */
-        .footerContent {
-            /*@editable*/
-            color: #808080;
-            /*@editable*/
-            font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Calibri, Helvetica, sans-serif;
-            /*@editable*/
-            font-size: 12px;
-            /*@editable*/
-            line-height: 150%;
-            /*@editable*/
-            padding: 20px;
-            /*@editable*/
-            text-align: center;
-        }
-
-        /**
-        * @tab Footer
-        * footer link
-        * @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
-        */
-        .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */
-        .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */
-        {
-            /*@editable*/
-            color: #606060;
-            /*@editable*/
-            font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
-        }
-
-        /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
-        @media only screen and (max-width: 480px) {
-            /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
-            body, table, td, p, a, li, blockquote {
-                -webkit-text-size-adjust: none !important;
+        @media only screen and (max-width: 600px) {
+            .st-br {
+                padding-left: 10px !important;
+                padding-right: 10px !important
             }
 
-            /* Prevent Webkit platforms from changing default text sizes */
-            body {
-                width: 100% !important;
-                min-width: 100% !important;
+            p, ul li, ol li, a {
+                font-size: 16px !important;
+                line-height: 150% !important
             }
 
-            /* Prevent iOS Mail from adding padding to the body */
-            /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
-            #bodyCell {
-                padding: 10px !important;
-            }
-
-            /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
-            /* ======== Page Styles ======== */
-            /**
-            * @tab Mobile Styles
-            * template width
-            * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
-            */
-            #templateContainer {
-                max-width: 768px !important;
-                /*@editable*/
-                width: 100% !important;
-            }
-
-            /**
-            * @tab Mobile Styles
-            * heading 1
-            * @tip Make the first-level headings larger in size for better readability on small screens.
-            */
             h1 {
                 font-size: 30px !important;
-                line-height: 35px !important;
+                text-align: center;
+                line-height: 120% !important
             }
 
-            /**
-            * @tab Mobile Styles
-            * heading 2
-            * @tip Make the second-level headings larger in size for better readability on small screens.
-            */
             h2 {
+                font-size: 26px !important;
+                text-align: center;
+                line-height: 120% !important
             }
 
-            /**
-            * @tab Mobile Styles
-            * heading 3
-            * @tip Make the third-level headings larger in size for better readability on small screens.
-            */
             h3 {
-                font-size: 24px !important;
-            }
-
-            /**
-            * @tab Mobile Styles
-            * heading 4
-            * @tip Make the fourth-level headings larger in size for better readability on small screens.
-            */
-            h4 {
-            }
-
-            /* ======== Header Styles ======== */
-            #templatePreheader {
-            }
-
-            /* Hide the template preheader to save space */
-            /**
-            * @tab Mobile Styles
-            * header image
-            * @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
-            */
-            #headerImage {
-                height: auto !important;
-                /*@editable*/
-                max-width: 768px !important;
-                /*@editable*/
-                width: 100% !important;
-            }
-
-            /**
-            * @tab Mobile Styles
-            * header text
-            * @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-            */
-            .headerContent {
-                /*@editable*/
                 font-size: 20px !important;
-                /*@editable*/
-                line-height: 125% !important;
+                text-align: center;
+                line-height: 120% !important
             }
 
-            /* ======== Body Styles ======== */
-            /**
-            * @tab Mobile Styles
-            * body text
-            * @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
-            */
-            .bodyContent {
-                /*@editable*/
-                font-size: 18px !important;
-                /*@editable*/
-                line-height: 145% !important;
-                padding: 20px;
+            h1 a {
+                font-size: 30px !important;
+                text-align: center
             }
 
-            /* ======== Footer Styles ======== */
-            /**
-            * @tab Mobile Styles
-            * footer text
-            * @tip Make the body content text larger in size for better readability on small screens.
-            */
-            .footerContent {
-                /*@editable*/
-                font-size: 14px !important;
-                /*@editable*/
-                line-height: 115% !important;
+            h2 a {
+                font-size: 26px !important;
+                text-align: center
             }
 
-            .footerContent a {
+            h3 a {
+                font-size: 20px !important;
+                text-align: center
+            }
+
+            .es-menu td a {
+                font-size: 14px !important
+            }
+
+            .es-header-body p, .es-header-body ul li, .es-header-body ol li, .es-header-body a {
+                font-size: 16px !important
+            }
+
+            .es-footer-body p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a {
+                font-size: 14px !important
+            }
+
+            .es-infoblock p, .es-infoblock ul li, .es-infoblock ol li, .es-infoblock a {
+                font-size: 12px !important
+            }
+
+            *[class="gmail-fix"] {
+                display: none !important
+            }
+
+            .es-m-txt-c, .es-m-txt-c h1, .es-m-txt-c h2, .es-m-txt-c h3 {
+                text-align: center !important
+            }
+
+            .es-m-txt-r, .es-m-txt-r h1, .es-m-txt-r h2, .es-m-txt-r h3 {
+                text-align: right !important
+            }
+
+            .es-m-txt-l, .es-m-txt-l h1, .es-m-txt-l h2, .es-m-txt-l h3 {
+                text-align: left !important
+            }
+
+            .es-m-txt-r img, .es-m-txt-c img, .es-m-txt-l img {
+                display: inline !important
+            }
+
+            .es-button-border {
+                display: block !important
+            }
+
+            a.es-button {
+                font-size: 16px !important;
                 display: block !important;
+                border-left-width: 0px !important;
+                border-right-width: 0px !important
             }
 
-            /* Place footer social and utility links on their own lines, for easier access */
-        }
+            .es-btn-fw {
+                border-width: 10px 0px !important;
+                text-align: center !important
+            }
 
-        .button-blue {
-            background: green;
-            border-radius: 3px;
-            border: 1px solid #025316;
-            color: #fff !important;
-            cursor: pointer;
-            display: inline-block;
-            height: 3rem;
-            line-height: 3rem;
-            text-align: center;
-            text-decoration: none;
-            user-select: none;
+            .es-adaptive table, .es-btn-fw, .es-btn-fw-brdr, .es-left, .es-right {
+                width: 100% !important
+            }
+
+            .es-content table, .es-header table, .es-footer table, .es-content, .es-footer, .es-header {
+                width: 100% !important;
+                max-width: 600px !important
+            }
+
+            .es-adapt-td {
+                display: block !important;
+                width: 100% !important
+            }
+
+            .adapt-img {
+                width: 100% !important;
+                height: auto !important
+            }
+
+            .es-m-p0 {
+                padding: 0 !important
+            }
+
+            .es-m-p0r {
+                padding-right: 0 !important
+            }
+
+            .es-m-p0l {
+                padding-left: 0 !important
+            }
+
+            .es-m-p0t {
+                padding-top: 0 !important
+            }
+
+            .es-m-p0b {
+                padding-bottom: 0 !important
+            }
+
+            .es-m-p20b {
+                padding-bottom: 20px !important
+            }
+
+            .es-mobile-hidden, .es-hidden {
+                display: none !important
+            }
+
+            tr.es-desk-hidden, td.es-desk-hidden, table.es-desk-hidden {
+                width: auto !important;
+                overflow: visible !important;
+                float: none !important;
+                max-height: inherit !important;
+                line-height: inherit !important
+            }
+
+            tr.es-desk-hidden {
+                display: table-row !important
+            }
+
+            table.es-desk-hidden {
+                display: table !important
+            }
+
+            td.es-desk-menu-hidden {
+                display: table-cell !important
+            }
+
+            table.es-table-not-adapt, .esd-block-html table {
+                width: auto !important
+            }
+
+            table.es-social {
+                display: inline-block !important
+            }
+
+            table.es-social td {
+                display: inline-block !important
+            }
+
+            .es-m-p5 {
+                padding: 5px !important
+            }
+
+            .es-m-p5t {
+                padding-top: 5px !important
+            }
+
+            .es-m-p5b {
+                padding-bottom: 5px !important
+            }
+
+            .es-m-p5r {
+                padding-right: 5px !important
+            }
+
+            .es-m-p5l {
+                padding-left: 5px !important
+            }
+
+            .es-m-p10 {
+                padding: 10px !important
+            }
+
+            .es-m-p10t {
+                padding-top: 10px !important
+            }
+
+            .es-m-p10b {
+                padding-bottom: 10px !important
+            }
+
+            .es-m-p10r {
+                padding-right: 10px !important
+            }
+
+            .es-m-p10l {
+                padding-left: 10px !important
+            }
+
+            .es-m-p15 {
+                padding: 15px !important
+            }
+
+            .es-m-p15t {
+                padding-top: 15px !important
+            }
+
+            .es-m-p15b {
+                padding-bottom: 15px !important
+            }
+
+            .es-m-p15r {
+                padding-right: 15px !important
+            }
+
+            .es-m-p15l {
+                padding-left: 15px !important
+            }
+
+            .es-m-p20 {
+                padding: 20px !important
+            }
+
+            .es-m-p20t {
+                padding-top: 20px !important
+            }
+
+            .es-m-p20r {
+                padding-right: 20px !important
+            }
+
+            .es-m-p20l {
+                padding-left: 20px !important
+            }
+
+            .es-m-p25 {
+                padding: 25px !important
+            }
+
+            .es-m-p25t {
+                padding-top: 25px !important
+            }
+
+            .es-m-p25b {
+                padding-bottom: 25px !important
+            }
+
+            .es-m-p25r {
+                padding-right: 25px !important
+            }
+
+            .es-m-p25l {
+                padding-left: 25px !important
+            }
+
+            .es-m-p30 {
+                padding: 30px !important
+            }
+
+            .es-m-p30t {
+                padding-top: 30px !important
+            }
+
+            .es-m-p30b {
+                padding-bottom: 30px !important
+            }
+
+            .es-m-p30r {
+                padding-right: 30px !important
+            }
+
+            .es-m-p30l {
+                padding-left: 30px !important
+            }
+
+            .es-m-p35 {
+                padding: 35px !important
+            }
+
+            .es-m-p35t {
+                padding-top: 35px !important
+            }
+
+            .es-m-p35b {
+                padding-bottom: 35px !important
+            }
+
+            .es-m-p35r {
+                padding-right: 35px !important
+            }
+
+            .es-m-p35l {
+                padding-left: 35px !important
+            }
+
+            .es-m-p40 {
+                padding: 40px !important
+            }
+
+            .es-m-p40t {
+                padding-top: 40px !important
+            }
+
+            .es-m-p40b {
+                padding-bottom: 40px !important
+            }
+
+            .es-m-p40r {
+                padding-right: 40px !important
+            }
+
+            .es-m-p40l {
+                padding-left: 40px !important
+            }
         }
     </style>
-
 </head>
-<body bgcolor="#f4f4f4" link="398bce" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
-      style="margin:0; padding:0;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;background: #f4f4f4;">
-<table class="content" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#f4f4f4"
-       style="background: #f4f4f4;">
-    <tr>
-        <td>
-
-            <!-- CSS Image background in Outlook : BEGIN -->
-            <!-- Best used with absolute image paths -->
-            <!--[if gte mso 9]>
-            <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-                <v:fill type="tile" color="#eeeeee" src="https://assets.digitalocean.com/email/background-fallback.png">
-            </v:background>
-            <![endif]-->
-            <!-- CSS Image background in Outlook : END -->
-            <!-- Logo Left Nav Right + Vertical Padding : BEGIN -->
-            <table border="0" width="600" cellpadding="0" cellspacing="0" align="center" class="email-container">
-                <tr>
-                    <td height="top" style="font-size: 0; line-height: 0;">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="force-col-center" valign="middle" style="padding: 20px 0;text-align: left;">
-                    </td>
-                    <td class="hide" valign="middle"
-                        style="padding: 20px 0;text-align: right; font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
-                    </td>
-                </tr>
-                <tr>
-                    <td height="10" style="font-size: 0; line-height: 0;">&nbsp;</td>
-                </tr>
-            </table>
-            <!-- Logo Left Nav Right + Vertical Padding : END -->
-
-            <!-- Email Container : BEGIN -->
-            <!-- This table wraps the whole body email within it's width (600px), sets the background color (white) and border (thin, gray, solid) -->
-            <table border="0" width="600" cellpadding="0" cellspacing="0" align="center"
-                   style="background: #ffffff;border: 1px solid #e5e5e5;" class="email-container">
-
-                <!-- Single Fluid Image, No Crop : BEGIN -->
-                <tr>
-                    <td style="padding: 30px 30px 0 0; text-align: center;">
-                        <a href="https://sikkim.store" target="_blank">
-                            <img src="https://sikkim.store/images/logo-flat.png" height="29" width="180" border="0"
-                                 alt="Sikkim Store Logo">
-                        </a>
-                    </td>
-                </tr>
-                <!-- Single Fluid Image, No Crop : END -->
-
-                <!-- Full Width, Fluid Column : BEGIN -->
-                <tr>
-                    <td style="border-bottom: 1px solid #e5e5e5;">
-                        <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
-                            <tr>
-                                <td style="padding: 0 30px 0 30px; font-family: sans-serif; font-size: 16px; line-height: 25px; color: #666666;">
-                                    <table cellpadding="10" style="width: 100%">
-                                        <tr>
-                                            <td colspan="2">
-                                                <h3>Hi, {{ $name }}</h3>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td colspan="2" style="padding-bottom:20px;">
-                                                <h2 style="margin-bottom:20px;">Thanks for using Registering Early
-                                                    Access.</h2>
-
-                                                <p>Due to festive seasons and pandemic, our launch might be delayed. But
-                                                    here's a good news, we are introducing new pricing models
-                                                    taking different types of business in mind. Its a flexible
-                                                    pricing. </p>
-
-                                                <p>You can either pay per sale (which is also minimal), or fixed monthly
-                                                    rate. Its a win win.</p>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><h3 style="margin:0;">Targeted milestones:</h3></td>
-                                        </tr>
-
-                                        <tr style="border-bottom: 1px solid #eee;">
-                                            <td>Launch early access program:</td>
-                                            <td style="float:right;">November, 25th</td>
-                                        </tr>
-
-
-                                        <tr style="border-bottom: 1px solid #eee;">
-                                            <td>Free access for early access participants:</td>
-                                            <td style="float:right;">Now 4 Months</td>
-                                        </tr>
-
-
-                                        <tr style="border-bottom: 1px solid #eee;">
-                                            <td>Projected public access launch:</td>
-                                            <td style="float:right;">December, 1st</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td colspan="2">
-                                                <a class="button-blue" style="width: 100%; margin-bottom: 30px;"
-                                                   href="https://sikkim.store/contact">Contact Us</a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr><!-- Full Width, Fluid Column : END -->
-            </table><!-- Email Container : END -->
-
-            <!-- Footer : BEGIN -->
-            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" class="email-container">
-                <tr>
-                    <td style="text-align: center;padding: 20px 0 5px;font-family: Helvetica, Arial, sans-serif; font-size: 13px; line-height: 28px;color: #888888;">
-                        Vocal for local! Spread the word, refer a friend to Sikkim Store.
-                    </td>
-                </tr>
-            </table><!-- Footer : END -->
-        </td>
-    </tr>
-</table>
+<body
+    style="width:100%;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
+<div class="es-wrapper-color" style="background-color:#F0F2F6">
+    <!--[if gte mso 9]>
+    <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+        <v:fill type="tile" color="#f0f2f6"></v:fill>
+    </v:background>
+    <![endif]-->
+    <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0"
+           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top">
+        <tr style="border-collapse:collapse">
+            <td valign="top" style="padding:0;Margin:0">
+                <table cellpadding="0" cellspacing="0" class="es-content" align="center"
+                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                    <tr style="border-collapse:collapse">
+                        <td align="center" style="padding:0;Margin:0">
+                            <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0"
+                                   cellspacing="0"
+                                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
+                                <tr style="border-collapse:collapse">
+                                    <td class="es-m-p0" align="left" style="padding:15px;Margin:0">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:570px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="center"
+                                                                style="padding:0;Margin:0;display:none"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="border-collapse:collapse">
+                                    <td align="left" bgcolor="#ffffff"
+                                        style="padding:0;Margin:0;padding-top:10px;padding-left:40px;padding-right:40px;background-color:#FFFFFF">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:520px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="center" class="es-m-txt-c"
+                                                                style="padding:0;Margin:0;font-size:0px"><a
+                                                                    target="_blank" href="https://sikkim.store"
+                                                                    style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:16px;text-decoration:underline;color:#2CB543"><img
+                                                                        src="{{ url(asset('images/mail_sqr_logo.png')) }}"
+                                                                        alt="Sikkim Store Logo"
+                                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                                        width="100" title="Sikkim Store Logo"
+                                                                        height="100"></a></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="es-content" align="center"
+                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                    <tr style="border-collapse:collapse">
+                        <td align="center" style="padding:0;Margin:0">
+                            <table bgcolor="transparent" class="es-content-body" align="center" cellpadding="0"
+                                   cellspacing="0"
+                                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
+                                <tr style="border-collapse:collapse">
+                                    <td class="es-m-p5t es-m-p0b es-m-p20r es-m-p20l" align="left" bgcolor="#ffffff"
+                                        style="Margin:0;padding-bottom:5px;padding-top:10px;padding-left:40px;padding-right:40px;background-color:#FFFFFF">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:520px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr class="es-mobile-hidden" style="border-collapse:collapse">
+                                                            <td align="left" class="es-m-txt-l"
+                                                                style="padding:0;Margin:0;padding-top:20px;padding-bottom:20px">
+                                                                <h3 style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#212121">
+                                                                    Hi, {{ $name }}</h3></td>
+                                                        </tr>
+                                                        <!--[if !mso]><!-- -->
+                                                        <tr class="es-desk-hidden"
+                                                            style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
+                                                            <td align="left" class="es-m-txt-l es-m-p10t es-m-p10b"
+                                                                style="padding:0;Margin:0;padding-top:20px;padding-bottom:20px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">
+                                                                    <strong>Hi, {{ $name }}</strong></p></td>
+                                                        </tr>
+                                                        <!--<![endif]-->
+                                                        <tr class="es-mobile-hidden" style="border-collapse:collapse">
+                                                            <td align="left" class="es-m-txt-l"
+                                                                style="padding:0;Margin:0;padding-top:15px;padding-bottom:15px">
+                                                                <h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#111111">
+                                                                    Thanks for&nbsp;Registering Early Access.</h2></td>
+                                                        </tr>
+                                                        <!--[if !mso]><!-- -->
+                                                        <tr class="es-desk-hidden"
+                                                            style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
+                                                            <td align="left" class="es-m-txt-l"
+                                                                style="padding:0;Margin:0;padding-top:15px;padding-bottom:15px">
+                                                                <h4 style="Margin:0;line-height:22px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;color:#111111;font-size:18px">
+                                                                    Thanks for Registering Early Access.</h4></td>
+                                                        </tr>
+                                                        <!--<![endif]-->
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left"
+                                                                style="padding:0;Margin:0;padding-top:10px;padding-bottom:10px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#555555">
+                                                                    Due to festive seasons and pandemic, our launch
+                                                                    might be delayed. But here's a good news, we are
+                                                                    introducing new pricing models taking different
+                                                                    types of business in mind. Its a flexible
+                                                                    pricing.</p></td>
+                                                        </tr>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left"
+                                                                style="padding:0;Margin:0;padding-top:10px;padding-bottom:10px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#555555">
+                                                                    You can either pay per sale (which is also minimal),
+                                                                    or fixed monthly rate. Its a win win.</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="es-content" align="center"
+                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                    <tr style="border-collapse:collapse">
+                        <td align="center" style="padding:0;Margin:0">
+                            <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0"
+                                   cellspacing="0"
+                                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
+                                <tr style="border-collapse:collapse">
+                                    <td class="es-m-p10t es-m-p20r es-m-p20l" align="left" bgcolor="#ffffff"
+                                        style="Margin:0;padding-bottom:5px;padding-top:20px;padding-left:40px;padding-right:40px;background-color:#FFFFFF">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:520px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0"><span
+                                                                    style="font-size:18px">Targeted milestones:</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="es-content" align="center"
+                       style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                    <tr style="border-collapse:collapse">
+                        <td align="center" style="padding:0;Margin:0">
+                            <table bgcolor="#ffffff" class="es-content-body" align="center" cellpadding="0"
+                                   cellspacing="0"
+                                   style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px">
+                                <tr class="es-mobile-hidden" style="border-collapse:collapse">
+                                    <td class="es-m-p20r es-m-p20l" align="left" bgcolor="#ffffff"
+                                        style="padding:0;Margin:0;padding-top:10px;padding-left:40px;padding-right:40px;background-color:#FFFFFF">
+                                        <!--[if mso]>
+                                        <table style="width:520px" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="width:326px" valign="top"><![endif]-->
+                                        <table cellpadding="0" cellspacing="0" class="es-left" align="left"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                            <tr style="border-collapse:collapse">
+                                                <td class="es-m-p20b" align="left"
+                                                    style="padding:0;Margin:0;width:326px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#696969">
+                                                                    Launch early access program:</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if mso]></td>
+                                        <td style="width:20px"></td>
+                                        <td style="width:174px" valign="top"><![endif]-->
+                                        <table cellpadding="0" cellspacing="0" class="es-right" align="right"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="left" style="padding:0;Margin:0;width:174px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#696969;text-align:right">
+                                                                    November, 25th</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if mso]></td></tr></table><![endif]--></td>
+                                </tr>
+                                <tr class="es-mobile-hidden" style="border-collapse:collapse">
+                                    <td class="es-m-p20r es-m-p20l" align="left" bgcolor="#ffffff"
+                                        style="padding:0;Margin:0;padding-top:20px;padding-left:40px;padding-right:40px;background-color:#FFFFFF">
+                                        <!--[if mso]>
+                                        <table style="width:520px" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="width:326px" valign="top"><![endif]-->
+                                        <table cellpadding="0" cellspacing="0" class="es-left" align="left"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                            <tr style="border-collapse:collapse">
+                                                <td class="es-m-p20b" align="left"
+                                                    style="padding:0;Margin:0;width:326px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#696969">
+                                                                    Free access for early access participants:</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if mso]></td>
+                                        <td style="width:20px"></td>
+                                        <td style="width:174px" valign="top"><![endif]-->
+                                        <table cellpadding="0" cellspacing="0" class="es-right" align="right"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="left" style="padding:0;Margin:0;width:174px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="right" style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#696969">
+                                                                    Now 4 Months</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if mso]></td></tr></table><![endif]--></td>
+                                </tr>
+                                <tr class="es-mobile-hidden" style="border-collapse:collapse">
+                                    <td class="es-m-p20r es-m-p20l" align="left" bgcolor="#ffffff"
+                                        style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:40px;padding-right:40px;background-color:#FFFFFF">
+                                        <!--[if mso]>
+                                        <table dir="rtl" style="width:520px" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td dir="ltr" style="width:254px" valign="top"><![endif]-->
+                                        <table cellpadding="0" cellspacing="0" class="es-right" align="right"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="left" class="es-m-p20b"
+                                                    style="padding:0;Margin:0;width:254px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="right" style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#696969">
+                                                                    December, 31st</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if mso]></td>
+                                        <td dir="ltr" style="width:20px"></td>
+                                        <td dir="ltr" style="width:246px" valign="top"><![endif]-->
+                                        <table cellpadding="0" cellspacing="0" class="es-left" align="left"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="left" style="padding:0;Margin:0;width:246px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#696969">
+                                                                    Projected public access launch:</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if mso]></td></tr></table><![endif]--></td>
+                                </tr>
+                                <!--[if !mso]><!-- -->
+                                <tr class="es-desk-hidden"
+                                    style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
+                                    <td class="es-m-p20r es-m-p20l" align="left" bgcolor="#ffffff"
+                                        style="padding:0;Margin:0;padding-top:20px;padding-left:40px;padding-right:40px;background-color:#FFFFFF">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:520px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0;padding-top:5px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:15px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:23px;color:#808080">
+                                                                    Launch early access program:</p></td>
+                                                        </tr>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left"
+                                                                style="padding:0;Margin:0;padding-top:5px;padding-bottom:25px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#333333">
+                                                                    November, 25th</p></td>
+                                                        </tr>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:15px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:23px;color:#808080">
+                                                                    Free access for early access participants:</p></td>
+                                                        </tr>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left"
+                                                                style="padding:0;Margin:0;padding-top:5px;padding-bottom:25px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#333333">
+                                                                    Launch early access program:</p></td>
+                                                        </tr>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left" style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:15px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:23px;color:#808080">
+                                                                    Projected public access launch:</p></td>
+                                                        </tr>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="left"
+                                                                style="padding:0;Margin:0;padding-top:5px;padding-bottom:25px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#333333">
+                                                                    December, 31st</p></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!--<![endif]-->
+                                <tr style="border-collapse:collapse">
+                                    <td class="es-m-p10t es-m-p20r es-m-p20l" align="left" bgcolor="#ffffff"
+                                        style="padding:0;Margin:0;padding-bottom:30px;padding-left:40px;padding-right:40px;background-color:#FFFFFF">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:520px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr style="border-collapse:collapse">
+                                                            <td align="center" style="padding:0;Margin:0"><span
+                                                                    class="es-button-border es-button-border-2"
+                                                                    style="border-style:solid;border-color:#2CB543;background:#071F4F;border-width:0px;display:block;border-radius:5px;width:auto;background-color:#089335;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;background-position:initial initial;background-repeat:initial initial"><a
+                                                                        href="https://sikkim.store/contact"
+                                                                        class="es-button es-button-1" target="_blank"
+                                                                        style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:16px;color:#FFFFFF;border-style:solid;border-color:#089335;border-width:10px 20px 10px 20px;display:block;background:#071F4F;border-radius:5px;font-weight:normal;font-style:normal;line-height:19px;width:auto;text-align:center;background-color:#089335;border-left-width:20px;border-right-width:20px;border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-right-radius:8px;border-bottom-left-radius:8px;background-position:initial initial;background-repeat:initial initial">Contact Us</a></span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="border-collapse:collapse">
+                                    <td class="es-m-p0t es-m-p0b" align="left"
+                                        style="Margin:0;padding-left:20px;padding-right:20px;padding-top:40px;padding-bottom:40px">
+                                        <table cellpadding="0" cellspacing="0" width="100%"
+                                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                            <tr style="border-collapse:collapse">
+                                                <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
+                                                    <table cellpadding="0" cellspacing="0" width="100%"
+                                                           role="presentation"
+                                                           style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                        <tr class="es-mobile-hidden" style="border-collapse:collapse">
+                                                            <td align="center" class="es-m-txt-c"
+                                                                style="padding:0;Margin:0"><p
+                                                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:12px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:18px;color:#808080">
+                                                                    Vocal for local! Spread the word, refer a friend to
+                                                                    Sikkim Store.</p></td>
+                                                        </tr>
+                                                        <!--[if !mso]><!-- -->
+                                                        <tr class="es-desk-hidden"
+                                                            style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
+                                                            <td align="center" class="es-m-txt-c"
+                                                                style="padding:0;Margin:0"><h6
+                                                                    style="color:#808080;font-size:12px">Vocal for
+                                                                    local, refer a friend to Sikkim Store.</h6></td>
+                                                        </tr>
+                                                        <!--<![endif]-->
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
