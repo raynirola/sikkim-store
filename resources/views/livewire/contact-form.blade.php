@@ -1,16 +1,16 @@
 <div class="flex flex-col justify-center mx-auto lg:w-4/6" x-data="{ open : true}">
     @if( session('success') )
-        <div class="rounded-md bg-brand-100 border border-brand-400 p-4 mb-4" x-show="open">
+        <div class="rounded-md bg-indigo-100 border border-indigo-400 p-4 mb-4" x-show="open">
             <div class="flex items-center">
                 <div class="flex-shrink-0">
-                    <svg class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                    <svg class="h-5 w-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                               clip-rule="evenodd"/>
                     </svg>
                 </div>
                 <div class="ml-3">
-                    <p class="text-sm leading-5 font-medium text-green-800">
+                    <p class="text-sm leading-5 font-medium text-indigo-800">
                         {{ session('success') }}
                     </p>
                 </div>
@@ -19,7 +19,7 @@
                         <button
                             type="button"
                             x-on:click="open = false"
-                            class="inline-flex rounded-md p-1.5 text-green-500 focus:outline-none focus:bg-green-100 transition ease-in-out duration-150"
+                            class="inline-flex rounded-md p-1.5 text-indigo-500 focus:outline-none focus:bg-indigo-100 transition ease-in-out duration-150"
                             aria-label="Dismiss">
                             <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -43,7 +43,7 @@
             <input id="name"
                    wire:model.defer="name"
                    name="name"
-                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5"
+                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5"
                    placeholder="John Doe"
                    type="text">
             @error('name')
@@ -57,7 +57,7 @@
             <input id="email"
                    wire:model.defer="email"
                    name="email"
-                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5"
+                   class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5"
                    placeholder="johndoe@mail.com"
                    type="email">
             @error('email')
@@ -71,7 +71,7 @@
             <textarea id="message"
                       wire:model.defer="message"
                       name="message"
-                      class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5 h-32 resize-none"
+                      class="appearance-none rounded-md relative block w-full px-3 py-3 md:py-2 border border-secondary-200 @error('name'){{'border-red-500'}} @enderror placeholder-secondary-500 text-secondary-700  focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 focus:z-10 text-base md:text-sm font-bodyFont sm:leading-5 h-32 resize-none"
                       placeholder="Something interesting perhaps."></textarea>
             @error('message')
             <span
@@ -80,9 +80,9 @@
         </div>
         <button
             type="submit"
-            class="mt-4 md:mt-0 font-bodyFont group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm leading-5 font-normal rounded-md text-secondary-200 bg-brand-700 hover:bg-brand-600 focus:outline-none focus:border-brand-600 focus:shadow-outline-green active:bg-brand-700 transition duration-150 ease-in-out disabled:opacity-75"
+            class="mt-4 md:mt-0 font-bodyFont group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm leading-5 font-normal rounded-md text-secondary-200 bg-indigo-700 hover:bg-indigo-600 focus:outline-none focus:border-indigo-600 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out disabled:opacity-75"
             wire:loading.target="submitContactForm"
-            wire:loading.class.remove="hover:bg-brand-600 focus:outline-none focus:border-brand-600 focus:shadow-outline-green active:bg-brand-700"
+            wire:loading.class.remove="hover:bg-indigo-600 focus:outline-none focus:border-indigo-600 focus:shadow-outline-indigo active:bg-indigo-700"
             wire:loading.attr="disabled">
             <p wire:loading.target="submitContactForm" wire:loading.remove
                class="group-hover:text-white uppercase md:capitalize">Send Message</p>

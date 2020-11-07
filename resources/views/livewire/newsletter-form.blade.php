@@ -15,9 +15,9 @@
                        wire:model.defer="subscriber_email"
                        type="text" placeholder="Enter your email" autocomplete="off"
                        name="subscriber_email"
-                       class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-xs font-bodyFont">
+                       class="appearance-none rounded-md relative w-full px-3 py-3 border border-indigo-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 text-xs font-bodyFont">
                 <button type="submit"
-                        class="text-sm flex items-center justify-center h-full py-3 px-8 absolute top-0 right-0 text-secondary-200  border-l bg-brand-700 rounded-r-md hover:text-white hover:bg-brand-600 disabled:opacity-75"
+                        class="text-sm flex items-center justify-center h-full py-3 px-8 absolute top-0 right-0 text-secondary-200  border-l bg-indigo-700 rounded-r-md hover:text-white hover:bg-indigo-600 disabled:opacity-75"
                         wire:loading.target="subscribe"
                         wire:loading.attr="disabled">
                     Subscribe
@@ -45,17 +45,17 @@
             <div class="flex flex-col">
                 <label for="emailSubsResponsive"></label>
                 <input
-                    class="appearance-none rounded-md relative w-full px-3 py-3 border border-brand-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-green focus:border-brand-700 text-base font-bodyFont"
+                    class="appearance-none rounded-md relative w-full px-3 py-3 border border-indigo-700 @error('subscriber_email'){{'border-red-500'}} @enderror placeholder-secondary-700 text-secondary-700  focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 text-base font-bodyFont"
                     id="emailSubsResponsive"
                     wire:model.defer="subscriber_email"
-                    type="text" placeholder="Enter your email" autocomplete="off"
+                    type="email" placeholder="Enter your email" autocomplete="email"
                     name="subscriber_email">
                 @error('subscriber_email')
                 <span
                     class="mt-1 pl-1 text-xs font-normal font-bodyFont tracking-tight text-red-600 text-left">{{$message}}</span>
                 @enderror
                 <button type="submit"
-                        class="mt-4 uppercase md:capitalize text-sm flex items-center justify-center h-full py-3 px-8 text-secondary-200  bg-brand-700 rounded-md hover:text-white hover:bg-brand-600 disabled:opacity-75"
+                        class="mt-4 uppercase md:capitalize text-sm flex items-center justify-center h-full py-3 px-8 text-secondary-200  bg-indigo-700 rounded-md hover:text-white hover:bg-indigo-600 disabled:opacity-75"
                         wire:loading.target="subscribe"
                         wire:loading.attr="disabled">
                     Subscribe
@@ -73,17 +73,17 @@
         </div>
     </form>
     @if( session('success') )
-        <div class="rounded-md bg-brand-100 border border-brand-400 p-4 mt-4 w-full md:w-2/3" x-show="open">
+        <div class="rounded-md bg-indigo-100 border border-indigo-400 p-4 mt-4 w-full md:w-2/3" x-show="open">
             <div class="flex items-center">
                 <div class="flex-shrink-0">
-                    <svg class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                    <svg class="h-5 w-5 text-indigo-400" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                               d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                               clip-rule="evenodd"/>
                     </svg>
                 </div>
                 <div class="ml-3">
-                    <p class="text-sm leading-5 font-medium text-green-800">
+                    <p class="text-sm leading-5 font-medium text-indigo-800">
                         {{ session('success') }}
                     </p>
                 </div>
@@ -92,7 +92,7 @@
                         <button
                             type="button"
                             x-on:click="open = false"
-                            class="inline-flex rounded-md p-1.5 text-green-500 focus:outline-none focus:bg-green-100 transition ease-in-out duration-150"
+                            class="inline-flex rounded-md p-1.5 text-indigo-500 focus:outline-none focus:bg-indigo-100 transition ease-in-out duration-150"
                             aria-label="Dismiss">
                             <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"

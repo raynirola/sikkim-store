@@ -2,28 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Preorder;
 use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public function index(): Renderable
     {
-        $this->middleware('auth');
-    }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return Renderable
-     */
-    public function index()
-    {
-        return view('home.index');
+        return view('home.index', [
+            'users' => Preorder::query()->count()
+        ]);
     }
 }
